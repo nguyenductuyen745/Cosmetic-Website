@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
+    <link rel="stylesheet" href="icon/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="base(Cau hinh chung).css">
+    <link rel="stylesheet" href="dtpMain.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="dtpResponsive.css">
+    <!--[if lte IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <title>Trang productDetail My phan Ohui</title>
+    <link rel="shortcut icon" href="./image/logo_webpage.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+			<div class="grid wide">
+				<div class="header__navbar hiden-on-mobile-tablet">
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item-separate">Vào cửa hàng trên ứng dụng TickID
+							<div class="header__QR">		<!--QR Code-->
+								<a href="https://tickid.vn/" target="_blank" class="header__">
+									<img class="header__QR-img" alt="QR code" src="image/QR.png">
+									<div class="header__QR-store">
+										<img alt="CH Play" class="header__QR-store--item" src="image/Google Play.png">
+										<img alt="App Store" class="header__QR-store--item" src="image/App Store.png">
+									</div>
+								</a>
+							</div>
+						</li>
+						<li class="header__navbar-item header__navbar-item-notpoints">Kết nối
+							<a title="Kết nối facebook" href="https://www.facebook.com/" target="_blank" class="header__navbar-link-icon">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a title="Kết nối instagram" href="https://www.instagram.com/" target="_blank" class="header__navbar-link-icon">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item-notification">
+							<a href="#" title="Thông Báo" class="header__navbar-link navbar-link--zindex">
+								<i class="far fa-bell"></i>Thông Báo
+							</a>
+							<div class="header__navbar-notifi">   <!--Notification-->
+								<h3 class="header__navbar-notifi-top">Thông Báo Mới Nhận</h3>
+								<ul class="header-notifi--list">
+									<li class="header-notifi--item">
+										<a href="#" class="header-notifi--link">
+											<img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1580794352-myphamohui-lgvina.png">
+											<div class="header-notifi--information">
+												<div class="header__notifi-name">Xác thực chính hãng nguồn gốc các sản phầm của Ohui
+												</div>
+												<div class="header__notifi-note">Xác thực chính hãng nguồn gốc các sản phầm của Ohui 
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="header-notifi--item">
+										<a href="#" class="header-notifi--link">
+											<img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1576046204-myphamohui-lgvina.png">
+											<div class="header-notifi--information">
+												<div class="header__notifi-name">Sale sốc bộ dưỡng Ohui the first tái tạo trẻ hóa da SALE OFF 70%</div>
+												<div class="header__notifi-note">Siêu Sale duy nhất 3 ngày 18-20/11/2020</div>
+												</div>
+										</a>
+									</li>
+									<li class="header-notifi--item">
+										<a href="#" class="header-notifi--link">
+											<img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png">
+											<div class="header-notifi--information">
+												<div class="header__notifi-name">Da nhạy cảm thì có dùng được SECRET không?</div>
+												<div class="header__notifi-note">"Da mình nhạy cảm thì có dùng được Secret không?"</div>
+											</div>
+										</a>
+									</li>
+									<li class="header-notifi--item">
+										<a href="#" class="header-notifi--link">
+											<img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1574754950-myphamohui-lgvina.png">
+											<div class="header-notifi--information">
+												<div class="header__notifi-name">Bộ sưu tậm phiên bản giới hạn mùa Lễ Hội 2019</div>
+												<div class="header__notifi-note">Bộ sưu tậm phiên bản giới hạn mùa Lễ Hội 2019</div>
+											</div>
+										</a>
+									</li>
+									<li class="header-notifi--item">
+										<a href="#" class="header-notifi--link">
+											<img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1574738403-myphamohui-lgvina.png">
+											<div class="header-notifi--information">
+												<div class="header__notifi-name">Ohui chính thức ra mắt dòng son lì mới The First Geniture Lipstick</div>
+												<div class="header__notifi-note">The First Geniture Lipstick - Tuyệt phầm cho đôi môi</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<div class="header__navbar-notifi--bottom">
+									<a class="header-notifi-bottom--link" title="Xem tất cả" href="#">Xem tất cả</a>
+								</div>
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							<a href="#" title="Trợ Giúp" class="header__navbar-link">
+								<i class="far fa-question-circle"></i>Trợ Giúp
+							</a>
+						</li>
+						
+							<!--Khi user chưa đăng nhập*-->
+						<li class="header__navbar-item navbar-item-register header__navbar-item-strong header__navbar-item-separate">Đăng Ký</li>
+						<li class="header__navbar-item navbar-item-login header__navbar-item-strong">Đăng Nhập</li>
+							<!--*Khi user đã đăng nhập*-->
+						<li class="header__navbar-item header__navbar-user">
+							<img class="header__navbar-user--img" src="image/img-User.jpg" alt="avatar">
+							<span class="header__navbar-user--name">Nguyễn Đức Tuyến</span>
+							<ul class="header__navbar-user--list">
+								<li class="header__navbar-user-item">
+									<a href="#">Tài khoản của tôi</a>
+								</li>
+								<li class="header__navbar-user-item">
+									<a href="#">Địa chỉ của tôi</a>
+								</li>
+								<li class="header__navbar-user-item">
+									<a href="#">Đơn mua</a>
+								</li>
+								<li class="header__navbar-user-item navbar-user-item--logout">
+									<a href="#">Đăng xuất</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="header-with-search">
+					<!--icon-bars-mobile-->
+					<div class="header__bars">
+						<label for="mobile-bars-checkbox" class="header__bars-label">
+							<i class="header__bars-icon fas fa-bars"></i>
+						</label>
+						<input type="checkbox" class="header__bars-input" id="mobile-bars-checkbox">
+						<label for="mobile-bars-checkbox" class="header__bars-overlay"></label>
+						<div class="header__bars-wrapper">
+							<!--Add class" header__bars--logged " zô header khi user đã login (Add vào 2 chỗ có đánh dấu (*))-->
+				<!-- (*) -->	<header class="header__bars-heading header__bars--logged">
+								<svg class="header__bars-heading-logo" viewBox="0 0 192 65"><g fill="#fff" fill-rule="evenodd"><path d="M35.6717403 44.953764c-.3333497 2.7510509-2.0003116 4.9543414-4.5823845 6.0575984-1.4379707.6145919-3.36871.9463856-4.896954.8421628-2.3840266-.0911143-4.6237865-.6708937-6.6883352-1.7307424-.7375522-.3788551-1.8370513-1.1352759-2.6813095-1.8437757-.213839-.1790053-.239235-.2937577-.0977428-.4944671.0764015-.1151823.2172535-.3229831.5286218-.7791994.45158-.6616533.5079208-.7446018.5587128-.8221779.14448-.2217688.3792333-.2411091.6107855-.0588804.0243289.0189105.0243289.0189105.0426824.0333083.0379873.0294402.0379873.0294402.1276204.0990653.0907002.0706996.14448.1123887.166248.1287205 2.2265285 1.7438508 4.8196989 2.7495466 7.4376251 2.8501162 3.6423042-.0496401 6.2615109-1.6873341 6.7308041-4.2020035.5160305-2.7675977-1.6565047-5.1582742-5.9070334-6.4908212-1.329344-.4166762-4.6895175-1.7616869-5.3090528-2.1250697-2.9094471-1.7071043-4.2697358-3.9430584-4.0763845-6.7048539.296216-3.8283059 3.8501677-6.6835796 8.340785-6.702705 2.0082079-.004083 4.0121475.4132378 5.937338 1.2244562.6816382.2873109 1.8987274.9496089 2.3189359 1.2633517.2420093.1777159.2898136.384872.1510957.60836-.0774686.12958-.2055158.3350171-.4754821.7632974l-.0029878.0047276c-.3553311.5640922-.3664286.5817134-.447952.7136572-.140852.2144625-.3064598.2344475-.5604202.0732783-2.0600669-1.3839063-4.3437898-2.0801572-6.8554368-2.130442-3.126914.061889-5.4706057 1.9228561-5.6246892 4.4579402-.0409751 2.2896772 1.676352 3.9613243 5.3858811 5.2358503 7.529819 2.4196871 10.4113092 5.25648 9.869029 9.7292478M26.3725216 5.42669372c4.9022893 0 8.8982174 4.65220288 9.0851664 10.47578358H17.2875686c.186949-5.8235807 4.1828771-10.47578358 9.084953-10.47578358m25.370857 11.57065968c0-.6047069-.4870064-1.0948761-1.0875481-1.0948761h-11.77736c-.28896-7.68927544-5.7774923-13.82058185-12.5059489-13.82058185-6.7282432 0-12.2167755 6.13130641-12.5057355 13.82058185l-11.79421958.0002149c-.59136492.0107446-1.06748731.4968309-1.06748731 1.0946612 0 .0285807.00106706.0569465.00320118.0848825H.99995732l1.6812605 37.0613963c.00021341.1031483.00405483.2071562.01173767.3118087.00170729.0236381.003628.0470614.00554871.0704847l.00362801.0782207.00405483.004083c.25545428 2.5789222 2.12707837 4.6560709 4.67201764 4.7519129l.00576212.0055872h37.4122078c.0177132.0002149.0354264.0004298.0531396.0004298.0177132 0 .0354264-.0002149.0531396-.0004298h.0796027l.0017073-.0015043c2.589329-.0706995 4.6867431-2.1768587 4.9082648-4.787585l.0012805-.0012893.0017073-.0350275c.0021341-.0275062.0040548-.0547975.0057621-.0823037.0040548-.065757.0068292-.1312992.0078963-.1964115l1.8344904-37.207738h-.0012805c.001067-.0186956.0014939-.0376062.0014939-.0565167M176.465457 41.1518926c.720839-2.3512494 2.900423-3.9186779 5.443734-3.9186779 2.427686 0 4.739107 1.6486899 5.537598 3.9141989l.054826.1556978h-11.082664l.046506-.1512188zm13.50267 3.4063683c.014933.0006399.014933.0006399.036906.0008531.021973-.0002132.021973-.0002132.044372-.0008531.53055-.0243144.950595-.4766911.950595-1.0271786 0-.0266606-.000853-.0496953-.00256-.0865936.000427-.0068251.000427-.020262.000427-.0635588 0-5.1926268-4.070748-9.4007319-9.09145-9.4007319-5.020488 0-9.091235 4.2081051-9.091235 9.4007319 0 .3871116.022399.7731567.067838 1.1568557l.00256.0204753.01408.1013102c.250022 1.8683731 1.047233 3.5831812 2.306302 4.9708108-.00064-.0006399.00064.0006399.007253.0078915 1.396026 1.536289 3.291455 2.5833031 5.393601 2.9748936l.02752.0053321v-.0027727l.13653.0228215c.070186.0119439.144211.0236746.243409.039031 2.766879.332724 5.221231-.0661182 7.299484-1.1127057.511777-.2578611.971928-.5423827 1.37064-.8429007.128211-.0968312.243622-.1904632.34346-.2781231.051412-.0452164.092372-.083181.114131-.1051493.468898-.4830897.498124-.6543572.215249-1.0954297-.31146-.4956734-.586228-.9179769-.821744-1.2675504-.082345-.1224254-.154023-.2267215-.214396-.3133151-.033279-.0475624-.033279-.0475624-.054399-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.00256-.0038391c-.256208-.3188605-.431565-.3480805-.715933-.0970445-.030292.0268739-.131624.1051493-.14997.1245582-1.999321 1.775381-4.729508 2.3465571-7.455854 1.7760208-.507724-.1362888-.982595-.3094759-1.419919-.5184948-1.708127-.8565509-2.918343-2.3826022-3.267563-4.1490253l-.02752-.1394881h13.754612zM154.831964 41.1518926c.720831-2.3512494 2.900389-3.9186779 5.44367-3.9186779 2.427657 0 4.739052 1.6486899 5.537747 3.9141989l.054612.1556978h-11.082534l.046505-.1512188zm13.502512 3.4063683c.015146.0006399.015146.0006399.037118.0008531.02176-.0002132.02176-.0002132.044159-.0008531.530543-.0243144.950584-.4766911.950584-1.0271786 0-.0266606-.000854-.0496953-.00256-.0865936.000426-.0068251.000426-.020262.000426-.0635588 0-5.1926268-4.070699-9.4007319-9.091342-9.4007319-5.020217 0-9.091343 4.2081051-9.091343 9.4007319 0 .3871116.022826.7731567.068051 1.1568557l.00256.0204753.01408.1013102c.250019 1.8683731 1.04722 3.5831812 2.306274 4.9708108-.00064-.0006399.00064.0006399.007254.0078915 1.396009 1.536289 3.291417 2.5833031 5.393538 2.9748936l.027519.0053321v-.0027727l.136529.0228215c.070184.0119439.144209.0236746.243619.039031 2.766847.332724 5.22117-.0661182 7.299185-1.1127057.511771-.2578611.971917-.5423827 1.370624-.8429007.128209-.0968312.243619-.1904632.343456-.2781231.051412-.0452164.09237-.083181.11413-.1051493.468892-.4830897.498118-.6543572.215246-1.0954297-.311457-.4956734-.586221-.9179769-.821734-1.2675504-.082344-.1224254-.154022-.2267215-.21418-.3133151-.033492-.0475624-.033492-.0475624-.054612-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.002346-.0038391c-.256419-.3188605-.431774-.3480805-.716138-.0970445-.030292.0268739-.131623.1051493-.149969.1245582-1.999084 1.775381-4.729452 2.3465571-7.455767 1.7760208-.507717-.1362888-.982582-.3094759-1.419902-.5184948-1.708107-.8565509-2.918095-2.3826022-3.267311-4.1490253l-.027733-.1394881h13.754451zM138.32144123 49.7357905c-3.38129629 0-6.14681004-2.6808521-6.23169343-6.04042014v-.31621743c.08401943-3.35418649 2.85039714-6.03546919 6.23169343-6.03546919 3.44242097 0 6.23320537 2.7740599 6.23320537 6.1960534 0 3.42199346-2.7907844 6.19605336-6.23320537 6.19605336m.00172791-15.67913203c-2.21776751 0-4.33682838.7553485-6.03989586 2.140764l-.19352548.1573553V34.6208558c0-.4623792-.0993546-.56419733-.56740117-.56419733h-2.17651376c-.47409424 0-.56761716.09428403-.56761716.56419733v27.6400724c0 .4539841.10583425.5641973.56761716.5641973h2.17651376c.46351081 0 .56740117-.1078454.56740117-.5641973V50.734168l.19352548.1573553c1.70328347 1.3856307 3.82234434 2.1409792 6.03989586 2.1409792 5.27140956 0 9.54473746-4.2479474 9.54473746-9.48802964 0-5.239867-4.2733279-9.48781439-9.54473746-9.48781439M115.907646 49.5240292c-3.449458 0-6.245805-2.7496948-6.245805-6.1425854 0-3.3928907 2.79656-6.1427988 6.245805-6.1427988 3.448821 0 6.24538 2.7499081 6.24538 6.1427988 0 3.3926772-2.796346 6.1425854-6.24538 6.1425854m.001914-15.5438312c-5.28187 0-9.563025 4.2112903-9.563025 9.4059406 0 5.1944369 4.281155 9.4059406 9.563025 9.4059406 5.281657 0 9.562387-4.2115037 9.562387-9.4059406 0-5.1946503-4.280517-9.4059406-9.562387-9.4059406M94.5919049 34.1890939c-1.9281307 0-3.7938902.6198995-5.3417715 1.7656047l-.188189.1393105V23.2574169c0-.4254677-.1395825-.5643476-.5649971-.5643476h-2.2782698c-.4600414 0-.5652122.1100273-.5652122.5643476v29.2834155c0 .443339.1135587.5647782.5652122.5647782h2.2782698c.4226187 0 .5649971-.1457701.5649971-.5647782v-9.5648406c.023658-3.011002 2.4931278-5.4412923 5.5299605-5.4412923 3.0445753 0 5.516841 2.4421328 5.5297454 5.4630394v9.5430935c0 .4844647.0806524.5645628.5652122.5645628h2.2726775c.481764 0 .565212-.0824666.565212-.5645628v-9.5710848c-.018066-4.8280677-4.0440197-8.7806537-8.9328471-8.7806537M62.8459442 47.7938061l-.0053397.0081519c-.3248668.4921188-.4609221.6991347-.5369593.8179812-.2560916.3812097-.224267.551113.1668119.8816949.91266.7358184 2.0858968 1.508535 2.8774525 1.8955369 2.2023021 1.076912 4.5810275 1.646045 7.1017886 1.6975309 1.6283921.0821628 3.6734936-.3050536 5.1963734-.9842376 2.7569891-1.2298679 4.5131066-3.6269626 4.8208863-6.5794607.4985136-4.7841067-2.6143125-7.7747902-10.6321784-10.1849709l-.0021359-.0006435c-3.7356476-1.2047686-5.4904836-2.8064071-5.4911243-5.0426086.1099976-2.4715346 2.4015793-4.3179454 5.4932602-4.4331449 2.4904317.0062212 4.6923065.6675996 6.8557356 2.0598624.4562232.2767364.666607.2256796.9733188-.172263.035242-.0587797.1332787-.2012238.543367-.790093l.0012815-.0019308c.3829626-.5500403.5089793-.7336731.5403767-.7879478.258441-.4863266.2214903-.6738208-.244985-1.0046173-.459427-.3290803-1.7535544-1.0024722-2.4936356-1.2978721-2.0583439-.8211991-4.1863175-1.2199998-6.3042524-1.1788111-4.8198184.1046878-8.578747 3.2393171-8.8265087 7.3515337-.1572005 2.9703036 1.350301 5.3588174 4.5000778 7.124567.8829712.4661613 4.1115618 1.6865902 5.6184225 2.1278667 4.2847814 1.2547527 6.5186944 3.5630343 6.0571315 6.2864205-.4192725 2.4743234-3.0117991 4.1199394-6.6498372 4.2325647-2.6382344-.0549182-5.2963324-1.0217793-7.6043603-2.7562084-.0115337-.0083664-.0700567-.0519149-.1779185-.1323615-.1516472-.1130543-.1516472-.1130543-.1742875-.1300017-.4705335-.3247898-.7473431-.2977598-1.0346184.1302162-.0346012.0529875-.3919333.5963776-.5681431.8632459"></path></g></svg>
+								<div class="header__bars-heading-user">
+									<img class="header__bars-heading-img" src="image/img-User.jpg" alt="avatar">
+									<span class="header__bars-heading-name">đức tuyến</span>
+								</div>
+								<label for="mobile-bars-checkbox" class="header__bars-close">
+									<i class="fas fa-times"></i>
+								</label>
+							</header>
+							<!--Add class" header__bars--logged " zô ul khi user đã login-->
+			<!-- (*) -->	<ul class="header__bars-list header__bars--logged">
+								<li class="header__bars-item header__bars-item--not-login">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon fas fa-sign-in-alt"></i>
+										Đăng nhập
+									</a>
+								</li>
+								<li class="header__bars-item header__bars-item--not-login">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon fas fa-user-plus"></i>
+										Đăng ký
+									</a>
+								</li>
+								<li class="header__bars-item">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon far fa-bell"></i>
+										Thông báo
+									</a>
+								</li>
+								<li class="header__bars-item">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon far fa-question-circle"></i>
+										Trợ giúp
+									</a>
+								</li>
+								<li class="header__bars-item">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon fas fa-adjust"></i>
+										Giao diện màu tối
+									</a>
+								</li>
+								<li class="header__bars-item header__bars-item--logged">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon fas fa-cog"></i>
+										Cài đặt
+									</a>
+								</li>
+								<li class="header__bars-item header__bars-item--logged">
+									<a class="header__bars-link" href="#">
+										<i class="header__bars-link-icon fas fa-sign-in-alt"></i>
+										Đăng xuất
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--icon-search-mobile-->
+					<label for="mobile-search-checkbox" class="header__mobile-search">
+						<i class="header__mobile-search-icon fas fa-search"></i>
+					</label>
+					<input type="checkbox" class="header__mobile-search-input" id="mobile-search-checkbox">
+					<div class="header__logo hiden-on-tablet"><!--Add class ẩn chỉ dùng cho các đt có ở PC-->
+						<a href="Index.html" class="header__logo-link">
+							<svg class="header__logo-img" viewBox="0 0 192 65"><g fill="#fff" fill-rule="evenodd"><path d="M35.6717403 44.953764c-.3333497 2.7510509-2.0003116 4.9543414-4.5823845 6.0575984-1.4379707.6145919-3.36871.9463856-4.896954.8421628-2.3840266-.0911143-4.6237865-.6708937-6.6883352-1.7307424-.7375522-.3788551-1.8370513-1.1352759-2.6813095-1.8437757-.213839-.1790053-.239235-.2937577-.0977428-.4944671.0764015-.1151823.2172535-.3229831.5286218-.7791994.45158-.6616533.5079208-.7446018.5587128-.8221779.14448-.2217688.3792333-.2411091.6107855-.0588804.0243289.0189105.0243289.0189105.0426824.0333083.0379873.0294402.0379873.0294402.1276204.0990653.0907002.0706996.14448.1123887.166248.1287205 2.2265285 1.7438508 4.8196989 2.7495466 7.4376251 2.8501162 3.6423042-.0496401 6.2615109-1.6873341 6.7308041-4.2020035.5160305-2.7675977-1.6565047-5.1582742-5.9070334-6.4908212-1.329344-.4166762-4.6895175-1.7616869-5.3090528-2.1250697-2.9094471-1.7071043-4.2697358-3.9430584-4.0763845-6.7048539.296216-3.8283059 3.8501677-6.6835796 8.340785-6.702705 2.0082079-.004083 4.0121475.4132378 5.937338 1.2244562.6816382.2873109 1.8987274.9496089 2.3189359 1.2633517.2420093.1777159.2898136.384872.1510957.60836-.0774686.12958-.2055158.3350171-.4754821.7632974l-.0029878.0047276c-.3553311.5640922-.3664286.5817134-.447952.7136572-.140852.2144625-.3064598.2344475-.5604202.0732783-2.0600669-1.3839063-4.3437898-2.0801572-6.8554368-2.130442-3.126914.061889-5.4706057 1.9228561-5.6246892 4.4579402-.0409751 2.2896772 1.676352 3.9613243 5.3858811 5.2358503 7.529819 2.4196871 10.4113092 5.25648 9.869029 9.7292478M26.3725216 5.42669372c4.9022893 0 8.8982174 4.65220288 9.0851664 10.47578358H17.2875686c.186949-5.8235807 4.1828771-10.47578358 9.084953-10.47578358m25.370857 11.57065968c0-.6047069-.4870064-1.0948761-1.0875481-1.0948761h-11.77736c-.28896-7.68927544-5.7774923-13.82058185-12.5059489-13.82058185-6.7282432 0-12.2167755 6.13130641-12.5057355 13.82058185l-11.79421958.0002149c-.59136492.0107446-1.06748731.4968309-1.06748731 1.0946612 0 .0285807.00106706.0569465.00320118.0848825H.99995732l1.6812605 37.0613963c.00021341.1031483.00405483.2071562.01173767.3118087.00170729.0236381.003628.0470614.00554871.0704847l.00362801.0782207.00405483.004083c.25545428 2.5789222 2.12707837 4.6560709 4.67201764 4.7519129l.00576212.0055872h37.4122078c.0177132.0002149.0354264.0004298.0531396.0004298.0177132 0 .0354264-.0002149.0531396-.0004298h.0796027l.0017073-.0015043c2.589329-.0706995 4.6867431-2.1768587 4.9082648-4.787585l.0012805-.0012893.0017073-.0350275c.0021341-.0275062.0040548-.0547975.0057621-.0823037.0040548-.065757.0068292-.1312992.0078963-.1964115l1.8344904-37.207738h-.0012805c.001067-.0186956.0014939-.0376062.0014939-.0565167M176.465457 41.1518926c.720839-2.3512494 2.900423-3.9186779 5.443734-3.9186779 2.427686 0 4.739107 1.6486899 5.537598 3.9141989l.054826.1556978h-11.082664l.046506-.1512188zm13.50267 3.4063683c.014933.0006399.014933.0006399.036906.0008531.021973-.0002132.021973-.0002132.044372-.0008531.53055-.0243144.950595-.4766911.950595-1.0271786 0-.0266606-.000853-.0496953-.00256-.0865936.000427-.0068251.000427-.020262.000427-.0635588 0-5.1926268-4.070748-9.4007319-9.09145-9.4007319-5.020488 0-9.091235 4.2081051-9.091235 9.4007319 0 .3871116.022399.7731567.067838 1.1568557l.00256.0204753.01408.1013102c.250022 1.8683731 1.047233 3.5831812 2.306302 4.9708108-.00064-.0006399.00064.0006399.007253.0078915 1.396026 1.536289 3.291455 2.5833031 5.393601 2.9748936l.02752.0053321v-.0027727l.13653.0228215c.070186.0119439.144211.0236746.243409.039031 2.766879.332724 5.221231-.0661182 7.299484-1.1127057.511777-.2578611.971928-.5423827 1.37064-.8429007.128211-.0968312.243622-.1904632.34346-.2781231.051412-.0452164.092372-.083181.114131-.1051493.468898-.4830897.498124-.6543572.215249-1.0954297-.31146-.4956734-.586228-.9179769-.821744-1.2675504-.082345-.1224254-.154023-.2267215-.214396-.3133151-.033279-.0475624-.033279-.0475624-.054399-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.00256-.0038391c-.256208-.3188605-.431565-.3480805-.715933-.0970445-.030292.0268739-.131624.1051493-.14997.1245582-1.999321 1.775381-4.729508 2.3465571-7.455854 1.7760208-.507724-.1362888-.982595-.3094759-1.419919-.5184948-1.708127-.8565509-2.918343-2.3826022-3.267563-4.1490253l-.02752-.1394881h13.754612zM154.831964 41.1518926c.720831-2.3512494 2.900389-3.9186779 5.44367-3.9186779 2.427657 0 4.739052 1.6486899 5.537747 3.9141989l.054612.1556978h-11.082534l.046505-.1512188zm13.502512 3.4063683c.015146.0006399.015146.0006399.037118.0008531.02176-.0002132.02176-.0002132.044159-.0008531.530543-.0243144.950584-.4766911.950584-1.0271786 0-.0266606-.000854-.0496953-.00256-.0865936.000426-.0068251.000426-.020262.000426-.0635588 0-5.1926268-4.070699-9.4007319-9.091342-9.4007319-5.020217 0-9.091343 4.2081051-9.091343 9.4007319 0 .3871116.022826.7731567.068051 1.1568557l.00256.0204753.01408.1013102c.250019 1.8683731 1.04722 3.5831812 2.306274 4.9708108-.00064-.0006399.00064.0006399.007254.0078915 1.396009 1.536289 3.291417 2.5833031 5.393538 2.9748936l.027519.0053321v-.0027727l.136529.0228215c.070184.0119439.144209.0236746.243619.039031 2.766847.332724 5.22117-.0661182 7.299185-1.1127057.511771-.2578611.971917-.5423827 1.370624-.8429007.128209-.0968312.243619-.1904632.343456-.2781231.051412-.0452164.09237-.083181.11413-.1051493.468892-.4830897.498118-.6543572.215246-1.0954297-.311457-.4956734-.586221-.9179769-.821734-1.2675504-.082344-.1224254-.154022-.2267215-.21418-.3133151-.033492-.0475624-.033492-.0475624-.054612-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.002346-.0038391c-.256419-.3188605-.431774-.3480805-.716138-.0970445-.030292.0268739-.131623.1051493-.149969.1245582-1.999084 1.775381-4.729452 2.3465571-7.455767 1.7760208-.507717-.1362888-.982582-.3094759-1.419902-.5184948-1.708107-.8565509-2.918095-2.3826022-3.267311-4.1490253l-.027733-.1394881h13.754451zM138.32144123 49.7357905c-3.38129629 0-6.14681004-2.6808521-6.23169343-6.04042014v-.31621743c.08401943-3.35418649 2.85039714-6.03546919 6.23169343-6.03546919 3.44242097 0 6.23320537 2.7740599 6.23320537 6.1960534 0 3.42199346-2.7907844 6.19605336-6.23320537 6.19605336m.00172791-15.67913203c-2.21776751 0-4.33682838.7553485-6.03989586 2.140764l-.19352548.1573553V34.6208558c0-.4623792-.0993546-.56419733-.56740117-.56419733h-2.17651376c-.47409424 0-.56761716.09428403-.56761716.56419733v27.6400724c0 .4539841.10583425.5641973.56761716.5641973h2.17651376c.46351081 0 .56740117-.1078454.56740117-.5641973V50.734168l.19352548.1573553c1.70328347 1.3856307 3.82234434 2.1409792 6.03989586 2.1409792 5.27140956 0 9.54473746-4.2479474 9.54473746-9.48802964 0-5.239867-4.2733279-9.48781439-9.54473746-9.48781439M115.907646 49.5240292c-3.449458 0-6.245805-2.7496948-6.245805-6.1425854 0-3.3928907 2.79656-6.1427988 6.245805-6.1427988 3.448821 0 6.24538 2.7499081 6.24538 6.1427988 0 3.3926772-2.796346 6.1425854-6.24538 6.1425854m.001914-15.5438312c-5.28187 0-9.563025 4.2112903-9.563025 9.4059406 0 5.1944369 4.281155 9.4059406 9.563025 9.4059406 5.281657 0 9.562387-4.2115037 9.562387-9.4059406 0-5.1946503-4.280517-9.4059406-9.562387-9.4059406M94.5919049 34.1890939c-1.9281307 0-3.7938902.6198995-5.3417715 1.7656047l-.188189.1393105V23.2574169c0-.4254677-.1395825-.5643476-.5649971-.5643476h-2.2782698c-.4600414 0-.5652122.1100273-.5652122.5643476v29.2834155c0 .443339.1135587.5647782.5652122.5647782h2.2782698c.4226187 0 .5649971-.1457701.5649971-.5647782v-9.5648406c.023658-3.011002 2.4931278-5.4412923 5.5299605-5.4412923 3.0445753 0 5.516841 2.4421328 5.5297454 5.4630394v9.5430935c0 .4844647.0806524.5645628.5652122.5645628h2.2726775c.481764 0 .565212-.0824666.565212-.5645628v-9.5710848c-.018066-4.8280677-4.0440197-8.7806537-8.9328471-8.7806537M62.8459442 47.7938061l-.0053397.0081519c-.3248668.4921188-.4609221.6991347-.5369593.8179812-.2560916.3812097-.224267.551113.1668119.8816949.91266.7358184 2.0858968 1.508535 2.8774525 1.8955369 2.2023021 1.076912 4.5810275 1.646045 7.1017886 1.6975309 1.6283921.0821628 3.6734936-.3050536 5.1963734-.9842376 2.7569891-1.2298679 4.5131066-3.6269626 4.8208863-6.5794607.4985136-4.7841067-2.6143125-7.7747902-10.6321784-10.1849709l-.0021359-.0006435c-3.7356476-1.2047686-5.4904836-2.8064071-5.4911243-5.0426086.1099976-2.4715346 2.4015793-4.3179454 5.4932602-4.4331449 2.4904317.0062212 4.6923065.6675996 6.8557356 2.0598624.4562232.2767364.666607.2256796.9733188-.172263.035242-.0587797.1332787-.2012238.543367-.790093l.0012815-.0019308c.3829626-.5500403.5089793-.7336731.5403767-.7879478.258441-.4863266.2214903-.6738208-.244985-1.0046173-.459427-.3290803-1.7535544-1.0024722-2.4936356-1.2978721-2.0583439-.8211991-4.1863175-1.2199998-6.3042524-1.1788111-4.8198184.1046878-8.578747 3.2393171-8.8265087 7.3515337-.1572005 2.9703036 1.350301 5.3588174 4.5000778 7.124567.8829712.4661613 4.1115618 1.6865902 5.6184225 2.1278667 4.2847814 1.2547527 6.5186944 3.5630343 6.0571315 6.2864205-.4192725 2.4743234-3.0117991 4.1199394-6.6498372 4.2325647-2.6382344-.0549182-5.2963324-1.0217793-7.6043603-2.7562084-.0115337-.0083664-.0700567-.0519149-.1779185-.1323615-.1516472-.1130543-.1516472-.1130543-.1742875-.1300017-.4705335-.3247898-.7473431-.2977598-1.0346184.1302162-.0346012.0529875-.3919333.5963776-.5681431.8632459"></path></g></svg>
+						</a>
+					</div>
+					<div class="header__search-wrapper">
+						<div class="header__search">
+							<div class="header__search-input-wrap">
+								<input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+								
+								<!--Search-History-->
+								<div class="header__search-history">
+									<h4 class="header__search-history-heading">Lịch sử tìm kiếm</h4>
+									<ul class="header__search-history-list">
+										<li class="header__search-history-item">
+											<a href="#">Sữa rửa mặt</a>
+										</li>
+										<li class="header__search-history-item">
+											<a href="#">Kem dưỡng ẩm</a>	
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="header__search-checkbox">
+								<span>Trong Shop</span>
+								<i class="header__search-checkbox--icon fas fa-angle-down"></i>
+								<ul class="header__search-checkbox--options">
+									<li class="search__checkbox-item search__checkbox-item--choose">
+										<span>Trong Shop</span>
+										<i class="fas fa-check"></i>
+									</li>
+									<li class="search__checkbox-item">
+										<span>Ngoài Shop</span>
+										<i class="fas fa-check"></i>
+									</li>
+								</ul>
+							</div>
+							<button class="header__search-button">
+								<i class="header__search-button--icon fas fa-search"></i>
+							</button>
+						</div>
+					</div>
+					<div class="header__cart">
+						<div class="header__cart-icon--wrap">
+							<i class="header__cart-icon fas fa-shopping-cart"></i>
+						<!---No Cart: header__cart-list--nocart thêm vào bên dưới khirỏhàngchưacó sp or bỏ đi khi có sp để rỏ hàng hiển thị đúng vs tình trạng hiện tại-->
+							<div class="header__cart-list">
+								<img class="cart__list-img--nocart" src="image/no-cart.png">
+								<p class="cart__list-note--nocart">Chưa Có Sản Phẩm</p>
+						<!--Has Cart-->
+								<h3 class="cart__heading">Sản Phẩm Đã Thêm</h3>
+								<ul class="cart__list-item">
+									<!-- <li class="cart__item">
+										<img class="cart__item--img" src="https://img.tickid.vn/photos/resized/320x/83-1580898039-myphamohui-lgvina.png">
+										<div class="cart__item--infor">
+											<div class="cart__infor-top">
+												<h4 class="cart__infor-top--name">Set dưỡng trắng Whoo đông y hoàng cung Gong Jinh Yang Seol Radiant</h4>
+												<div class="cart__infor-top--wrap">
+													<span class="cart__infor-top--price">11.070.000đ</span>
+													<span class="cart__infor-top--multiply">x</span>
+													<span class="cart__infor-top--soluong">1</span>
+												</div>
+											</div>
+											<div class="cart__info-bottom">
+												<span class="cart__info-bottom--classifi">Phân loại hàng: Bạc</span>
+												<span class="cart__info-bottom--remove">
+													<span class="cart__info-bottom--lable hiden-on-mobile-tablet">Xóa</span>
+													<i class="cart__info-bottom--trash-can fas fa-trash-alt"></i>
+												</span>
+											</div>
+										</div>
+									</li>
+									<li class="cart__item">
+										<img class="cart__item--img" src="https://img.tickid.vn/photos/resized/320x/83-1581502939-myphamohui-lgvina.png">
+										<div class="cart__item--infor">
+											<div class="cart__infor-top">
+												<h4 class="cart__infor-top--name">Bộ sản phẩm chống nắng Ohui  Dayshield Smart Pumping Foundation Cushion Special Set .</h4>
+												<div class="cart__infor-top--wrap">
+													<span class="cart__infor-top--price">1.215.000đ</span>
+													<span class="cart__infor-top--multiply">x</span>
+													<span class="cart__infor-top--soluong">1</span>
+												</div>
+											</div>
+											<div class="cart__info-bottom">
+												<span class="cart__info-bottom--classifi">Phân loại hàng: Bạc</span>
+												<span class="cart__info-bottom--remove">
+													<span class="cart__info-bottom--lable hiden-on-mobile-tablet">Xóa</span>
+													<i class="cart__info-bottom--trash-can fas fa-trash-alt"></i>
+												</span>
+											</div>
+										</div>
+									</li>
+									<li class="cart__item">
+										<img class="cart__item--img" src="https://img.tickid.vn/photos/resized/320x/83-1580889448-myphamohui-lgvina.png">
+										<div class="cart__item--infor">
+											<div class="cart__infor-top">
+												<h4 class="cart__infor-top--name">Set sữa rửa mặt Ohui Prime Gel Cleanser</h4>
+												<div class="cart__infor-top--wrap">
+													<span class="cart__infor-top--price">1.035.000đ</span>
+													<span class="cart__infor-top--multiply">x</span>
+													<span class="cart__infor-top--soluong">1</span>
+												</div>
+											</div>
+											<div class="cart__info-bottom">
+												<span class="cart__info-bottom--classifi">Phân loại hàng: Bạc</span>
+												<span class="cart__info-bottom--remove">
+													<span class="cart__info-bottom--lable hiden-on-mobile-tablet">Xóa</span>
+													<i class="cart__info-bottom--trash-can fas fa-trash-alt"></i>
+												</span>
+											</div>
+										</div>
+									</li> -->
+								</ul>
+								<div class="cart__list-bottom">
+									<button class="cart__list-viewcart btn btn--primary btn--shining">Xem Giỏ Hàng</button>
+								</div>
+							</div>
+							<span class="header__cart-notice">3</span><!--Hiện hay ẩn phụ thuộc vào class trên-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+        <div class="container">
+            <div class="page-products">
+                <div class="grid wide">     <!-- breadcrumb: là thanh điều hướng thường nằm ở trên đầu và thường có những thẻ link-->
+                    <nav class="mobile-category">
+                        <ul class="mobile-category__list">
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tẩy trang</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Combo đồ trang điểm 3/1</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Mỹ phẩm nhập từ Hàn Quốc</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Đồ dùng mắt xa mặt Ohui</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Nước hoa cho quý ông</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Mỹ phẩm nhập ngoại từ Nhật</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Nước tẩy trang đa năng CR7</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                            <li class="mobile-category__item">
+                                <a href="#" class="mobile-category__link">Dụng cụ & Thiết bị tiện ích</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="products-breadcrumb">
+                        <ul class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a class="breadcrumb__item-link" href="#">Trang chủ</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <i class="breadcrumb__item-icon fas fa-chevron-right"></i>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <a class="breadcrumb__item-link" href="#">Sức khỏe & sắc đẹp</a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <i class="breadcrumb__item-icon fas fa-chevron-right"></i>
+                            </li>
+                            <li class="breadcrumb__item">
+                                <span class="breadcrumb__item-label">Set dưỡng da hoàng cung Ohui Miracle Moisture</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row no-gutters products-briefing">       <!--briefing: sự chỉ dẫn tường tận, hướng dẫn-->
+                        <div class="col l-40-percent m-12 c-12">
+                            <div class="products-briefing__left">
+                                <div class="products-briefing__left-wrapper-img">
+                                    <div class="products-briefing__left-sourse-img" style="background-image: url(https://img.abaha.vn/photos/resized/1024x/83-1586781803-myphamohui-lgvina.png);"></div>
+                                </div>
+                                <div class="products-briefing__left-slider hiden-under-800"> <!--Add slider-show-button khi slider full-->
+                                    <div class="left-slider__item left-slider__item--first">
+                                        <div class="left-slider__item-img left-slider__item--hover" style="background-image: url(https://img.abaha.vn/photos/resized/1024x/83-1586781803-myphamohui-lgvina.png);"></div>
+                                    </div>
+                                    <div class="left-slider__item">
+                                        <div class="left-slider__item-img" style="background-image: url(https://img.tickid.vn/photos/resized/320x320/83-1577360256-myphamohui-lgvina.png);"></div>
+                                    </div>
+                                    <div class="left-slider__item">
+                                        <div class="left-slider__item-img" style="background-image: url(https://img.tickid.vn/photos/resized/320x320/83-1575705318-myphamohui-lgvina.png);"></div>
+                                    </div>
+                                    <button class="left-slider__button left-slider__button--left">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button class="left-slider__button left-slider__button--right">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                                <div class="products-briefing__left-footer">
+                                    <div class="left-footer__sharing">
+                                        <label class="left-footer__sharing-label">Chia sẻ: </label>
+                                        <div class="left-footer__sharing-button-list">
+                                            <button class="left-footer__sharing-button-item" title="facebook">
+                                                <i class="button-facebook fab fa-facebook"></i>
+                                            </button>
+                                            <button class="left-footer__sharing-button-item" title="messenger">
+                                                <i class="button-messenger fab fa-facebook-messenger"></i>
+                                            </button>
+                                            <button class="left-footer__sharing-button-item" title="google">
+                                                <i class="button-google fab fa-google-plus"></i>
+                                            </button>
+                                            <button class="left-footer__sharing-button-item" title="printerest">
+                                                <i class="button-printerest fab fa-pinterest"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="left-footer__favourite"> <!-- Add: left-footer__favourite-action-->
+                                        <div class="left-footer__favourite-fill">
+                                            <i class="left-footer__favourite-icon fas fa-heart"></i>
+                                            <span class="left-footer__favourite-label">Đã thích (486)</span>
+                                        </div>
+                                        <div class="left-footer__favourite-empty">
+                                            <i class="left-footer__favourite-icon far fa-heart"></i>
+                                            <span class="left-footer__favourite-label">Yêu thích</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products-briefing__left-add-mobile-tablet">
+                                    <div class="products-briefing__left-quantity-action">
+                                        <div class="right-detail__quantity">
+                                            <label class="right-detail__quantity-label hiden-under-800">Số Lượng</label>
+                                            <div class="right-detail__quantity-input-wrapper">
+                                                <div class="right-detail__quantity-input">
+                                                    <button class="right-detail__quantity-button quantity-button--reduction">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                    <input class="right-detail__quantity-current" type="text" value="1" maxlength="3">
+                                                    <button class="right-detail__quantity-button quantity-button--increase">
+                                                        <i class="fas fa-plus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="products-briefing__right-action right-action--mobile-tablet">
+                                            <button class="btn right-action__add-cart">
+                                                <i class="right-action__add-cart-icon fas fa-cart-plus hiden-under-800"></i>
+                                                <span class="right-action__add-cart-label">thêm vào giỏ hàng</span>
+                                            </button>
+                                            <button class="btn btn--primary btn--shining right-action__buy-now">
+                                                mua ngay
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="products-briefing__right-footer">
+                                        <a class="right-footer__link" href="#">
+                                            <img class="right-footer__link-img" src="image/uds.png">
+                                            <span class="right-footer__link-label">gian hàng đảm bảo</span>
+                                            <span>3 ngày hoàn tiền</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-60-percent m-12 c-12">
+                            <div class="products-briefing__right">
+                                <div class="products-briefing__right-heading">
+                                    <div class="right-heading__favourite hiden-on-mobile-tablet">
+                                        <i class="fas fa-check"></i>
+                                        Yêu Thích
+                                    </div>
+                                    <span class="right-heading__label">Set kem mắt tái sinh Ohui The First Geniture Eye Cream Edition Grand Blue</span>
+                                </div>
+                                <div class="products-briefing__right-parameter">
+                                    <div class="right-parameter__rating">
+                                        <span class="right-parameter__rating-label">5.0</span>
+                                        <div class="right-parameter__rating-stars-wrapper">
+                                            <i class="right-parameter__rating-star-fill fas fa-star"></i>
+                                            <i class="right-parameter__rating-star-fill fas fa-star"></i>
+                                            <i class="right-parameter__rating-star-fill fas fa-star"></i>
+                                            <i class="right-parameter__rating-star-fill fas fa-star"></i>
+                                            <i class="right-parameter__rating-star-fill fas fa-star"></i>
+                                            <!-- <i class="right-parameter__rating-star-empty far fa-star"></i> -->
+                                        </div>
+                                    </div>
+                                    <div class="right-parameter__evaluate hiden-on-mobile">
+                                        <span class="right-parameter__evaluate-amount">186</span>
+                                        <span class="right-parameter__evaluate-label">Đánh Giá</span>
+                                    </div>
+                                    <div class="right-parameter__sold hiden-on-mobile">
+                                        <span class="right-parameter__sold-amount">824</span>
+                                        <span class="right-parameter__sold-label">Đã Bán</span>
+                                    </div>
+                                </div>
+                                <div class="products-briefing__right-price">
+                                    <span class="right-price__old">4.600.000đ</span>
+                                    <div class="right-price__current">4.140.000đ</div>
+                                    <div class="right-price__sale-off">
+                                        <span class="right-price__sale-off-percent">10%</span>
+                                        <span class="right-price__sale-off-label">giảm</span>
+                                    </div>
+                                </div>
+                                <div class="products-briefing__right-detail hiden-on-mobile-tablet">
+                                    <div class="right-detail__info">
+                                        <label class="right-detail__info-label">Thông Tin</label>
+                                        <div class="right-detail__info-sumary">
+                                            <div class="right-detail__info-wrapper">
+                                                <p>
+                                                    The First Geniture Eye Cream Edition Grand Blue – Biểu tượng của tình yêu vĩnh cửu
+                                                    <br>
+                                                    <br>
+                                                    Sản phẩm đầu tiên trong bộ sưu tập The First Geniture Đá Quý Hoàng Gia 2020 đã lộ diện: The First Geniture Eye Cream Edition Grand Blue với thiết kế lấy cảm hứng từ chiếc vương miện đá shapphire lộng lẫy do đích thân Hoàng tử Anh Albert Ball tặng người vợ yêu quý là Nữ hoàng Victoria,
+                                                    cũng chính là tượng đài cho tình yêu sâu đậm trường tồn với thời gian.
+                                                    <br>
+                                                    <br>
+                                                    - Đặc biệt, sản phẩm bao gồm hũ kem mắt 55ml - tăng 220% dung tích so với hũ kem mắt thông thường của The First.
+                                                    Nếu nàng đã trót xao xuyến không nguôi trước ánh đá xanh đầy ma lực, đừng bỏ lỡ cơ hội sở hữu phiên bản The First Geniture Eye Cream Edition Grand Blue này nhé!
+                                                </p>
+                                            </div>
+                                            <a href="#product-description" class="right-detail__info-link">Xem chi tiết</a>
+                                        </div>
+                                    </div>
+                                    <div class="right-detail__quantity hiden-on-mobile">
+                                        <label class="right-detail__quantity-label hiden-on-mobile-tablet">Số Lượng</label>
+                                        <div class="right-detail__quantity-input-wrapper">
+                                            <div class="right-detail__quantity-input">
+                                                <button class="right-detail__quantity-button quantity-button--reduction">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input class="right-detail__quantity-current" type="text" value="1" maxlength="3">
+                                                <button class="right-detail__quantity-button quantity-button--increase">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products-briefing__right-action hiden-on-mobile-tablet">
+                                    <button class="btn right-action__add-cart">
+                                        <i class="right-action__add-cart-icon fas fa-cart-plus"></i>
+                                        <span class="right-action__add-cart-label">thêm vào giỏ hàng</span>
+                                    </button>
+                                    <button class="btn btn--primary btn--shining right-action__buy-now">
+                                        mua ngay
+                                    </button>
+                                </div>
+                                <div class="products-briefing__right-footer hiden-on-mobile-tablet">
+                                    <a class="right-footer__link" href="#">
+                                        <img class="right-footer__link-img" src="image/uds.png">
+                                        <span class="right-footer__link-label">gian hàng đảm bảo</span>
+                                        <span>3 ngày hoàn tiền</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-products__content">
+                        <div class="page-products__content-left">
+                            <div class="content-left__product-details" id="product-description">
+                                <div class="product-details__item">
+                                    <div class="product-details__item-heading">
+                                        <span>chi tiết sản phẩm</span>
+                                    </div>
+                                    <div class="product-details__item-info">
+                                        <div class="product-details__item-info-row">
+                                            <label class="item-info-row__label">Danh Mục</label>
+                                            <a href="#" class="item-info-row__link">Shoppe Thefirst Tái Sinh</a>
+                                        </div>
+                                        <div class="product-details__item-info-row">
+                                            <label class="item-info-row__label">Xuất sứ</label>
+                                            <span class="item-info-row__span">Hàn Quốc</span>
+                                        </div>
+                                        <div class="product-details__item-info-row">
+                                            <label class="item-info-row__label">Thương Hiệu</label>
+                                            <a href="#" class="item-info-row__link item-info-row__link--shopee">Shopee</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-details__item">
+                                    <div class="product-details__item-heading">
+                                        <span>mô tả sản phẩm</span>
+                                    </div>
+                                    <div class="product-details__item-description">
+                                        <p>
+                                            The First Geniture Eye Cream Edition Grand Blue – Biểu tượng của tình yêu vĩnh cửu 
+                                            <br>
+                                            <br>
+                                            Sản phẩm đầu tiên trong bộ sưu tập The First Geniture Đá Quý Hoàng Gia 2020 đã lộ diện: The First Geniture Eye Cream Edition Grand Blue với thiết kế lấy cảm hứng từ chiếc vương miện đá shapphire lộng lẫy do đích thân Hoàng tử Anh Albert Ball tặng người vợ yêu quý là Nữ hoàng Victoria, cũng chính là tượng đài cho tình yêu sâu đậm trường tồn với thời gian.
+                                            <br>
+                                            <br>
+                                            - Đặc biệt, sản phẩm bao gồm hũ kem mắt 55ml - tăng 220% dung tích so với hũ kem mắt thông thường của The First.
+                                            <br>
+                                            <br>
+                                            Nếu nàng đã trót xao xuyến không nguôi trước ánh đá xanh đầy ma lực, đừng bỏ lỡ cơ hội sở hữu phiên bản The First Geniture Eye Cream Edition Grand Blue này nhé!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-left__promotion-combo">
+                                <div class="promotion-combo__heading">
+                                    <h4 class="promotion-combo__heading-left">Sản phẩm liên quan</h4>
+                                    <a href="#" class="promotion-combo__heading-right">
+                                        Xem tất cả
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>                                           <!--Add: promotion-combo__products-full khi số lượng sản phẩm > 6-->
+                                <div class="promotion-combo__products" title="lq"> <!--Add: products-button--action khi user click button-rigt-->
+                                    <button class="promotion-combo__products-button products-button--left">
+                                        <i class="promotion-combo__products-button-icon fas fa-chevron-left"></i>
+                                    </button>
+                                    <div style="overflow: hidden">
+                                        <ul class="promotion-combo__products-list">
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1586773435-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Set sữa rửa mặt Ohui Thefirst tái sinh</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">1.750.000đ</div>
+                                                        <div class="products-item__current-price">1.575.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">                                                  
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1574919130-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Set nước sữa tái sinh Ohui thefirst </h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">4.200.000đ</div>
+                                                        <div class="products-item__current-price">3.780.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573713479-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Set Tinh chất Vàng 24k Ohui The first tăng Gấp Đôi Thể Tích Bản Limited </h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.700.000</div>
+                                                        <div class="products-item__current-price">7.830.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1572600180-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Sữa rửa mặt tái sinh Ohui thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">1.550.000</div>
+                                                        <div class="products-item__current-price">1.395.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1574413779-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Nước hoa hồng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">2.100.000</div>
+                                                        <div class="products-item__current-price">1.890.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1572668793-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573128249-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573297972-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1576135159-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1574418452-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1591783524-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="promotion-combo__products-button products-button--right">
+                                        <i class="promotion-combo__products-button-icon fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="content-left__promotion-combo">
+                                <div class="promotion-combo__heading">
+                                    <h4 class="promotion-combo__heading-left">Sản phẩm bán chạy</h4>
+                                    <a href="#" class="promotion-combo__heading-right">
+                                        Xem tất cả
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>                                                                   <!--Add: promotion-combo__products-full khi số lượng sản phẩm > 6-->
+                                <div class="promotion-combo__products" title="bc"> <!--Add: products-button--action khi user click button-rigt-->
+                                    <button class="promotion-combo__products-button products-button--left">
+                                        <i class="promotion-combo__products-button-icon fas fa-chevron-left"></i>
+                                    </button>
+                                    <div style="overflow: hidden">
+                                        <ul class="promotion-combo__products-list">
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1575812225-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Set sữa rửa mặt Ohui Thefirst tái sinh</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">1.750.000đ</div>
+                                                        <div class="products-item__current-price">1.575.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">                                                  
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1574920726-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Set nước sữa tái sinh Ohui thefirst </h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">4.200.000đ</div>
+                                                        <div class="products-item__current-price">3.780.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1574152837-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Set Tinh chất Vàng 24k Ohui The first tăng Gấp Đôi Thể Tích Bản Limited </h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.700.000</div>
+                                                        <div class="products-item__current-price">7.830.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573713479-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Sữa rửa mặt tái sinh Ohui thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">1.550.000</div>
+                                                        <div class="products-item__current-price">1.395.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1586508167-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Nước hoa hồng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">2.100.000</div>
+                                                        <div class="products-item__current-price">1.890.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573292648-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1574411348-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Sữa rửa mặt tái sinh Ohui thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">1.550.000</div>
+                                                        <div class="products-item__current-price">1.395.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1574413855-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Nước hoa hồng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">2.100.000</div>
+                                                        <div class="products-item__current-price">1.890.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1596776828-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573463088-myohui.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="promotion-combo__products-item">
+                                                <a href="#" class="promotion-combo__products-item-link">
+                                                    <div class="products-item__img-wrap">
+                                                        <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1585291439-myphamohui-lgvina.png);"></div>
+                                                    </div>
+                                                    <h4 class="products-item__name">Tinh chất vàng tái sinh Ohui Thefirst</h4>
+                                                    <div class="products-item__price">
+                                                        <div class="products-item__original-price">8.100.000</div>
+                                                        <div class="products-item__current-price">7.290.000đ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="promotion-combo__products-button products-button--right">
+                                        <i class="promotion-combo__products-button-icon fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="content-left__promotion-combo">
+                                <div class="promotion-combo__heading">
+                                    <h4 class="promotion-combo__heading-left">Sản phẩm đã xem</h4>
+                                    <a href="#" class="promotion-combo__heading-right">
+                                        Xem tất cả
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>                                   <!--Add: promotion-combo__products-full khi số lượng sản phẩm > 6-->
+                                <div class="promotion-combo__products"> <!--Add: products-button--action khi user click button-rigt-->
+                                    <button class="promotion-combo__products-button products-button--left">
+                                        <i class="promotion-combo__products-button-icon fas fa-chevron-left"></i>
+                                    </button>
+                                    <ul class="promotion-combo__products-list">
+                                        <li class="promotion-combo__products-item">
+                                            <a href="#" class="promotion-combo__products-item-link">
+                                                <div class="products-item__img-wrap">
+                                                    <div class="products-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/1024x/83-1586781803-myphamohui-lgvina.png);"></div>
+                                                </div>
+                                                <h4 class="products-item__name">Set sữa rửa mặt Ohui Thefirst tái sinh</h4>
+                                                <div class="products-item__price">
+                                                    <div class="products-item__original-price">1.750.000đ</div>
+                                                    <div class="products-item__current-price">1.575.000đ</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <button class="promotion-combo__products-button products-button--right">
+                                        <i class="promotion-combo__products-button-icon fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-products__content-right hiden-on-mobile-tablet">
+                            <div class="page-products__hot-sales">
+                                <h4 class="page-products__hot-sales-heading">sản phẩm bán chạy</h4>
+                                <ul class="page-products__hot-sales-list">
+                                    <li class="page-products__hot-sales-item">
+                                        <a href="#" class="page-products__hot-sales-link">
+                                            <div class="hot-sales-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1575812225-myphamohui-lgvina.png);"></div>
+                                            <div class="hot-sales-item__name">Set Ohui Chống lão hóa Age recovery</div>
+                                            <div class="hot-sales-item__price">2.700.000đ</div>
+                                        </a>
+                                    </li>
+                                    <li class="page-products__hot-sales-item">
+                                        <a href="#" class="page-products__hot-sales-link">
+                                            <div class="hot-sales-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/83-1574920726-myphamohui-lgvina.png);"></div>
+                                            <div class="hot-sales-item__name">Set Ohui Chống lão hóa Age recovery</div>
+                                            <div class="hot-sales-item__price">2.700.000đ</div>
+                                        </a>
+                                    </li>
+                                    <li class="page-products__hot-sales-item">
+                                        <a href="#" class="page-products__hot-sales-link">
+                                            <div class="hot-sales-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1574152837-myohui.png);"></div>
+                                            <div class="hot-sales-item__name">Set Ohui Chống lão hóa Age recovery</div>
+                                            <div class="hot-sales-item__price">2.700.000đ</div>
+                                        </a>
+                                    </li>
+                                    <li class="page-products__hot-sales-item page-products__hot-sales--last-item">
+                                        <a href="#" class="page-products__hot-sales-link">
+                                            <div class="hot-sales-item__img" style="background-image: url(https://img.abaha.vn/photos/resized/320x/73-1573713479-myohui.png);"></div>
+                                            <div class="hot-sales-item__name">Set Ohui Chống lão hóa Age recovery</div>
+                                            <div class="hot-sales-item__price">2.700.000đ</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col l-2-4 m-6 c-12">
+						<h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="" class="footer__item-link">Trung Tâm Trợ Giúp</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link">Phản Hồi Khách Hàng</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link">Hướng Dẫn Mua Hàng</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-6 c-12 footer--mobile-margin">
+						<h3 class="footer__heading">VỀ CHÚNG TÔI</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="" class="footer__item-link">Giới Thiệu Về Shop</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link">Tuyển Dụng</a>
+							</li>
+							<li class="footer__item">
+								<a href="" class="footer__item-link">Điều Khoản Shop</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-0 c-0">
+						<h3 class="footer__heading">THANH TOÁN</h3>
+					</div>
+					<div class="col l-2-4 m-6 c-12 footer--tablet-mobile-margin">
+						<h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
+						<ul class="footer__list">
+							<li class="footer__item footer__item--social">
+								<a href="#" class="footer__item-link">
+									<i class="footer__item-icon fab fa-facebook"></i>
+									<span class="footer__item-label">Facebook</span>
+								</a>
+							</li>
+							<li class="footer__item footer__item--social">
+								<a href="#" class="footer__item-link">
+									<i class="footer__item-icon fab fa-instagram"></i>
+									<span class="footer__item-label">Instagram</span>
+								</a>
+							</li>
+							<li class="footer__item footer__item--social">
+								<a href="#" class="footer__item-link">
+									<i class="footer__item-icon fab fa-linkedin"></i>
+									<span class="footer__item-label">Linkedln</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-6 c-0 footer--tablet-margin">
+						<h3 class="footer__heading">VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h3>
+						<div class="footer__download">
+							<a href="#" style="text-decoration: none">
+									<img class="footer__download-QR" src="image/QR.png">
+							</a>
+							<div class="footer__download-apps">
+								<a href="#" class="footer__down-link">
+									<img class="footer__download-apps-img" src="image/App Store.png">
+								</a>
+								<a href="#" class="footer__down-link">
+									<img class="footer__download-apps-img" src="image/Google Play.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-bottom__list">
+					<li class="footer-bottom__item">
+						<a href="#" class="footer-bottom__item-link">CHÍNH SÁCH BẢO MẬT</a>
+					</li>
+					<li class="footer-bottom__item">
+						<a href="#" class="footer-bottom__item-link">QUY CHẾ HOẠT ĐỘNG</a>
+					</li>
+					<li class="footer-bottom__item">
+						<a href="#" class="footer-bottom__item-link">CHÍNH SÁCH VẬN CHUYỂN</a>
+					</li>
+					<li class="footer-bottom__item">
+						<a href="#" class="footer-bottom__item-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
+					</li>
+				</ul>
+				<div class="footer-bottom__logo">
+					<a href="#" class="footer-bottom__logo-link">
+						<div class="footer-bottom__img"></div>
+					</a>
+				</div>
+				<div class="footer-bottom__address">Địa chỉ: Thôn 3, Xã Canh Nậu, Huyện Thạch Thất, Hà Nội</div>
+				<div class="footer-bottom__copyright">
+					<i class="far fa-copyright"></i> 2020 - Bản quyền thuộc về Công Ty TTT
+				</div>
+			</div>
+		</footer>
+    </div>
+    <!-- tao Base Modal (Ô đăng nhập,đăng ký)-->
+    <div class="modal">
+        <div class="modal__overlay"><!--Phần bóng đen mờ vây full trang web css bên file base.css-->
+        </div>
+        <div class="modal__body"><!--Phần box trắng ở center css bên file base.css-->
+            <!--Register form ĐK-->
+                <div class="auth-form register-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__header-Dk-left">Đăng Ký</h3>
+                            <span class="auth-form__header-Dn-right move-form">Đăng nhập</span>
+                        </div>
+                        <form action="" method="POST" id="register-form" class="auth-form__form">
+                            <div class="auth-form__form-child">	<!--data-rule attribute là để xđ cái trường đó có phải ktra ko? (ko tính isRequired vì nó áp dụng cho all trường)-->
+                                <input type="text" data-rule="true" name="email" class="auth-form__form-input" placeholder="Email của bạn" >
+                                <span class="auth-form__form-message"></span>
+                            </div>
+                            <div class="auth-form__form-child">
+                                <input type="password" data-rule="true" name="password" autocomplete="on" class="auth-form__form-input" placeholder="Mật khẩu của bạn" >
+                                <span class="auth-form__form-message"></span>
+                            </div>
+                            <div class="auth-form__form-child">
+                                <input type="password" data-rule="true" name="confirmation" autocomplete="on" class="auth-form__form-input" placeholder="Nhập lại mật khẩu" >
+                                <span class="auth-form__form-message"></span>
+                            </div>
+                        </form>
+                        <p class="auth-form__note">Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                            <a href="#" title="Điều khoản dịch vụ" class="auth-form__note-link">Điều khoản dịch vụ</a> & 
+                            <a href="#" title="Chính sách bảo mật" class="auth-form__note-link">Chính sách bảo mật</a>
+                        </p>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--back">TRỞ LẠI</button>
+                            <button type="submit" form="register-form" class="btn btn--primary btn-submit">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <button class="btn btn-with--icon auth-form__socials--facebook">
+                            <i class="auth-form__socials--icon fab fa-facebook-square"></i>
+                            <span class="btn-icon--text">Kết nối với Facebook</span>
+                        </button>
+                        <button class="btn btn-with--icon auth-form__socials--google">
+                            <i class="auth-form__socials--icon fab fa-google" style="color:#D44446"></i>
+                            <span class="btn-icon--text">Kết nối với Google</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!--Login form ĐN-->
+                <div class="auth-form login-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__header-Dn-left">Đăng Nhập</h3>
+                                <span class="auth-form__header-Dk-right move-form">Đăng ký</span>
+                            </div>
+                            <form action="" method="POST" id="login-form" class="auth-form__form">
+                                <div class="auth-form__form-child">
+                                    <input type="text" name="email" data-rule="true" class="auth-form__form-input" placeholder="Email của bạn / Tên đăng nhập">
+                                    <span class="auth-form__form-message"></span>
+                                </div>
+                                <div class="auth-form__form-child">
+                                    <input type="password" name="password" data-rule="true" autocomplete="on" class="auth-form__form-input" placeholder="Mật khẩu của bạn" >
+                                    <span class="auth-form__form-message"></span>
+                                </div>
+                            </form>
+                            <div class="auth-form__help">
+                                <a class="auth-form__help-forget" target="_blank" href="https://shopee.vn/buyer/login/reset">Quên Mật Khẩu</a>
+                                <div class="auth-form__form-separate"></div>
+                                <a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn btn--back">TRỞ LẠI</button>
+                                <button type="submits" form="login-form" class="btn btn--primary btn-submit">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__socials">
+                            <button class="btn btn-between auth-form__socials--sms">
+                                <i class="auth-form__socials--icon fas fa-comment-dots"></i>
+                                <span class="btn-icon--text">SMS</span>
+                            </button>
+                            <button class="btn btn-between auth-form__socials--facebook">
+                                <i class="auth-form__socials--icon fab fa-facebook-square"></i>
+                                <span class="btn-icon--text">Facebook</span>
+                            </button>
+                            <button class="btn btn-between auth-form__socials--google">
+                                <i class="auth-form__socials--icon fab fa-google" style="color:#D44446"></i>
+                                <span class="btn-icon--text">Google</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="addition-cart-successful">
+        <span class="addition-cart-successful__span">Sản phẩm đã được thêm vào giỏ hàng</span>
+        <i class="addition-cart-successful__icon fas fa-check-circle"></i>
+    </div>
+    <div class="chat">
+		<div class="chat-off">
+			<i class="chat-off__icon far fa-comments"></i>
+			<span class="chat-off__label">Chat</span>
+		</div>
+		<div class="chat-on">
+			<div class="chat__heading">
+				<span class="chat__heading-label">Chat</span>
+				<button class="chat__heading-collapse">
+					<i class="chat__heading-icon fas fa-chevron-down"></i>
+				</button>
+			</div>
+			<div class="chat__conversation">
+				<div class="chat__conversation-login">
+					<p class="chat__conversation-note">Bạn cần đăng nhập để chat với shop</p>
+					<button class="btn btn--primary chat__conversation--btn">Đăng Nhập Ngay</button>
+				</div>
+			</div>
+			<div class="chat__footer">
+				<form action="#" method="post" enctype="text/plain" class="chat__form">
+					<div class="chat-on__footer-box">
+						<textarea class="chat__footer-textarea" placeholder="Gửi tin nhắn"></textarea>
+					</div>
+				</form>
+				<div class="chat__actions">
+					<input id="file-explorer" type="file" style="display: none;">
+					<label for="file-explorer" title="Thêm file" class="chat__actions-btn">
+						<i class="chat__actions-icon far fa-image"></i>
+					</label>
+					<label class="chat__actions-btn">
+						<i class="chat__actions-icon fas far fa-newspaper"></i>
+					</label>
+					<label class="chat__actions-btn">
+						<i class="chat__actions-icon far fa-list-alt"></i>
+					</label>
+					<button class="chat__actions-btn chat__actions-btn--send">
+						<i class="chat__actions-icon far fa-paper-plane"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="user-interactive">
+        <a class="interactive-call" target="_blank" href="#" title="Gọi với chúng tôi qua điện thoại">
+            <i class="interactive-call__icon fas fa-phone-alt"></i>
+        </a>
+        <a class="interactive-messenger" target="_blank" href="https://www.messenger.com/" title="Chat với chúng tôi qua facebook messenger">
+            <i class="interactive-messenger__icon fab fa-facebook-messenger"></i>
+        </a>
+        <a class="interactive-zalo" target="_blank" href="https://www.zalo/" title="Chat với chúng tôi qua zalo">
+            <svg class="interactive-zalo__icon" x="0px" y="0px" viewBox="0 0 44 44" fill="none">
+                <circle cx="22" cy="22" r="20" fill="url(#paint0_linear)"></circle>
+                    <g clip-path="url(#clip0)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.274 34.0907C15.7773 34.0856 16.2805 34.0804 16.783 34.0804C16.7806 34.0636 16.7769 34.0479 16.7722 34.0333C16.777 34.0477 16.7808 34.0632 16.7832 34.0798C16.8978 34.0798 17.0124 34.0854 17.127 34.0965H25.4058C26.0934 34.0965 26.7809 34.0977 27.4684 34.0989C28.8434 34.1014 30.2185 34.1039 31.5935 34.0965H31.6222C33.5357 34.0798 35.0712 32.5722 35.0597 30.7209V27.4784C35.0597 27.4582 35.0612 27.4333 35.0628 27.4071C35.0676 27.3257 35.0731 27.2325 35.0368 27.2345C34.9337 27.2401 34.7711 27.2757 34.7138 27.3311C34.2744 27.6145 33.8483 27.924 33.4222 28.2335C32.57 28.8525 31.7179 29.4715 30.7592 29.8817C27.0284 31.0993 23.7287 31.157 20.2265 30.3385C20.0349 30.271 19.9436 30.2786 19.7816 30.292C19.6773 30.3007 19.5436 30.3118 19.3347 30.3068C19.3093 30.3077 19.2829 30.3085 19.2554 30.3093C18.9099 30.3197 18.4083 30.3348 17.8088 30.6877C16.4051 31.1034 14.5013 31.157 13.5175 31.0147C13.522 31.0245 13.5247 31.0329 13.5269 31.0407C13.5236 31.0341 13.5204 31.0275 13.5173 31.0208C13.5036 31.0059 13.4864 30.9927 13.4696 30.98C13.4163 30.9393 13.3684 30.9028 13.46 30.8268C13.4867 30.8102 13.5135 30.7929 13.5402 30.7757C13.5937 30.7412 13.6472 30.7067 13.7006 30.6771C14.4512 30.206 15.1559 29.6905 15.6199 28.9311C16.2508 28.1911 15.9584 27.9025 15.4009 27.3524L15.3799 27.3317C12.6639 24.6504 11.8647 21.8054 12.148 17.9785C12.486 15.8778 13.4829 14.0708 14.921 12.4967C15.7918 11.5433 16.8288 10.7729 17.9632 10.1299C17.9796 10.1198 17.9987 10.1116 18.0182 10.1032C18.0736 10.0793 18.1324 10.0541 18.1408 9.98023C18.1475 9.92191 18.0507 9.90264 18.0163 9.90264C17.3698 9.90264 16.7316 9.89705 16.0964 9.89148C14.8346 9.88043 13.5845 9.86947 12.3041 9.90265C10.465 9.95254 8.78889 11.1779 8.81925 13.3614C8.82689 17.2194 8.82435 21.0749 8.8218 24.9296C8.82053 26.8567 8.81925 28.7835 8.81925 30.7104C8.81925 32.5007 10.2344 34.0028 12.085 34.0749C13.1465 34.1125 14.2107 34.1016 15.274 34.0907ZM13.5888 31.1403C13.5935 31.1467 13.5983 31.153 13.6032 31.1594C13.7036 31.2455 13.8031 31.3325 13.9021 31.4202C13.8063 31.3312 13.7072 31.2423 13.6035 31.1533C13.5982 31.1487 13.5933 31.1444 13.5888 31.1403ZM16.5336 33.8108C16.4979 33.7885 16.4634 33.7649 16.4337 33.7362C16.4311 33.7358 16.4283 33.7352 16.4254 33.7345C16.4281 33.7371 16.4308 33.7397 16.4335 33.7423C16.4632 33.7683 16.4978 33.79 16.5336 33.8108Z" fill="white"></path>
+                        <path d="M17.6768 21.6754C18.5419 21.6754 19.3555 21.6698 20.1633 21.6754C20.6159 21.6809 20.8623 21.8638 20.9081 22.213C20.9597 22.6509 20.6961 22.9447 20.2034 22.9502C19.2753 22.9613 18.3528 22.9558 17.4247 22.9558C17.1554 22.9558 16.8919 22.9669 16.6226 22.9502C16.2903 22.9336 15.9637 22.8671 15.8033 22.5345C15.6429 22.2019 15.7575 21.9026 15.9752 21.631C16.8575 20.5447 17.7455 19.4527 18.6336 18.3663C18.6851 18.2998 18.7367 18.2333 18.7883 18.1723C18.731 18.0781 18.6508 18.1224 18.582 18.1169C17.9633 18.1114 17.3388 18.1169 16.72 18.1114C16.5768 18.1114 16.4335 18.0947 16.296 18.067C15.9695 17.995 15.7689 17.679 15.8434 17.3686C15.895 17.158 16.0669 16.9862 16.2846 16.9363C16.4221 16.903 16.5653 16.8864 16.7085 16.8864C17.7284 16.8809 18.7539 16.8809 19.7737 16.8864C19.9571 16.8809 20.1347 16.903 20.3123 16.9474C20.7019 17.0749 20.868 17.4241 20.7133 17.7899C20.5758 18.1058 20.3581 18.3774 20.1404 18.649C19.3899 19.5747 18.6393 20.4948 17.8888 21.4093C17.8258 21.4814 17.7685 21.5534 17.6768 21.6754Z" fill="white"></path>
+                        <path d="M24.3229 18.7604C24.4604 18.5886 24.6036 18.4279 24.8385 18.3835C25.2911 18.2948 25.7151 18.5775 25.7208 19.021C25.738 20.1295 25.7323 21.2381 25.7208 22.3467C25.7208 22.6349 25.526 22.8899 25.2453 22.973C24.9588 23.0783 24.6322 22.9952 24.4432 22.7568C24.3458 22.6404 24.3057 22.6183 24.1682 22.7236C23.6468 23.1338 23.0567 23.2058 22.4207 23.0063C21.4009 22.6848 20.9827 21.9143 20.8681 20.9776C20.7478 19.9632 21.0973 19.0986 22.0369 18.5664C22.816 18.1175 23.6067 18.1563 24.3229 18.7604ZM22.2947 20.7836C22.3061 21.0275 22.3863 21.2603 22.5353 21.4543C22.8447 21.8534 23.4348 21.9365 23.8531 21.6372C23.9218 21.5873 23.9848 21.5263 24.0421 21.4543C24.363 21.033 24.363 20.3402 24.0421 19.9189C23.8817 19.7027 23.6296 19.5752 23.3603 19.5697C22.7301 19.5309 22.289 20.002 22.2947 20.7836ZM28.2933 20.8168C28.2474 19.3923 29.2157 18.3281 30.5907 18.2893C32.0517 18.245 33.1174 19.1928 33.1632 20.5785C33.209 21.9808 32.321 22.973 30.9517 23.106C29.4563 23.2502 28.2704 22.2026 28.2933 20.8168ZM29.7313 20.6838C29.7199 20.961 29.8058 21.2326 29.9777 21.4598C30.2928 21.8589 30.8829 21.9365 31.2955 21.6261C31.3585 21.5818 31.41 21.5263 31.4616 21.4709C31.7939 21.0496 31.7939 20.3402 31.4673 19.9189C31.3069 19.7083 31.0548 19.5752 30.7855 19.5697C30.1668 19.5364 29.7313 19.991 29.7313 20.6838ZM27.7891 19.7138C27.7891 20.573 27.7948 21.4321 27.7891 22.2912C27.7948 22.6848 27.474 23.0118 27.0672 23.0229C26.9985 23.0229 26.924 23.0174 26.8552 23.0007C26.5688 22.9287 26.351 22.6349 26.351 22.2857V17.8791C26.351 17.6186 26.3453 17.3636 26.351 17.1031C26.3568 16.6763 26.6375 16.3992 27.0615 16.3992C27.4969 16.3936 27.7891 16.6708 27.7891 17.1142C27.7948 17.9789 27.7891 18.8491 27.7891 19.7138Z" fill="white"></path>
+                        <path d="M22.2947 20.7828C22.289 20.0013 22.7302 19.5302 23.3547 19.5634C23.6239 19.5745 23.876 19.702 24.0364 19.9181C24.3573 20.3339 24.3573 21.0322 24.0364 21.4535C23.7271 21.8526 23.1369 21.9357 22.7187 21.6364C22.65 21.5865 22.5869 21.5255 22.5296 21.4535C22.3864 21.2595 22.3062 21.0267 22.2947 20.7828ZM29.7314 20.683C29.7314 19.9957 30.1668 19.5357 30.7856 19.569C31.0549 19.5745 31.307 19.7075 31.4674 19.9181C31.794 20.3394 31.794 21.0544 31.4617 21.4701C31.1408 21.8636 30.545 21.9302 30.1382 21.6198C30.0752 21.5754 30.0236 21.52 29.9778 21.459C29.8059 21.2318 29.7257 20.9602 29.7314 20.683Z" fill="#0068FF"></path>
+                    </g>
+            </svg>
+        </a>
+    </div>
+	<script src="javascrip-general.js"></script>
+    <script src="javascript-detail-page.js"></script>
+    <script>
+        // Update info product giống với sản phẩm mà user đã chọn
+        UpdateProduct();
+        //
+        Cart();
+        //Đổ dataCart nếu user đã login
+        dropDataCart();
+        //
+		account();
+		chat();
+        search();
+        searchCheckboxWrap();
+		Validator('#register-form');
+        Validator('#login-form');
+        Quantity();
+        HoverImage();
+        removeCartItem();
+        sliderImage();
+        FavouriteProduct();
+	</script>
+</body>
+</html>
