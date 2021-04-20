@@ -1198,7 +1198,7 @@ function SetProductInfor() {
                 if(item['name'] === event.currentTarget.querySelector('.home-product-item__name').innerText && `url("${item['image']}")` === event.currentTarget.querySelector('.home-product-item__img').style.backgroundImage) {
                     
                     //Vì vị trí file khác nhau cho nên file modifie lại link dẫn
-                    item['image'] = `../.${item['image']}`
+                    item['image'] = `.${item['image']}`
                     setInfoCurrentUser('chosenProduct', item);
                     break;
                 }
