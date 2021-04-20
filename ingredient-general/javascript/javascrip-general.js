@@ -440,9 +440,11 @@ function Cart() {
 
 // Hàm dùng để chèn sản phẩm vào cuối list cart
 function insertProduct(productInfor, quantity) {
+    var productImg = document.querySelector('.Pagination') ? productInfor.image.slice(1) : productInfor.image;
+    
     document.querySelector('.cart__list-item').insertAdjacentHTML('beforeend', `
         <li class="cart__item">
-            <img class="cart__item--img" src="${productInfor.image}">
+            <img class="cart__item--img" src="${productImg}">
             <div class="cart__item--infor">
                 <div class="cart__infor-top">
                     <h4 class="cart__infor-top--name">${productInfor.name}</h4>
