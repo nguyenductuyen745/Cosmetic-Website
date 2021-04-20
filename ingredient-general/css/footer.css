@@ -1,0 +1,163 @@
+/*Footer*/
+.footer{
+	border-top: 4px solid var(--primary-color);
+	padding-top: 40px;
+	background-color: #fbfbfb;
+}
+
+.footer__heading{
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 22px;
+}
+
+.footer__list{
+	list-style-type: none;
+}
+
+.footer__item{
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.footer__item-link{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #737373;
+	font-size: 1.2rem;
+}
+
+.footer__item:hover .footer__item-link{
+	color: var(--primary-color);
+}
+
+.footer__item--social{
+	display: flex;
+}
+
+.footer__item-icon{
+	font-size: 1.7rem;
+	color: rgba(0, 0, 0, 0.7);
+	margin: 0 6px 0 4px;
+	transform: translateY(1px);
+}
+
+.footer__download{
+	display: flex;
+}
+
+.footer__download-QR{
+	--width-height: 86px;
+	width: var(--width-height);
+	height: var(--width-height);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer__download-apps{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 14px;
+	box-sizing: border-box;
+	padding: 4px 0;
+}
+
+.footer__download-link{
+	text-decoration: none;
+}
+
+.footer__download-apps-img{
+	height: 17px;
+}
+
+.footer-bottom{
+	margin-top: 26px;
+	padding: 40px 0 35px 0;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-bottom__list{
+	list-style-type: none;
+}
+
+.footer-bottom__item{
+	display: inline-table;
+	margin: 0 24px;
+	position: relative;
+}
+
+.footer-bottom__item::before{
+	content: "";
+	display: block;
+	width: 1px;
+	height: 15px;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	top: 2px;
+	left: -24.5px;
+}
+
+.footer-bottom__item:first-child::before{
+	display: none;
+}
+
+.footer-bottom__item-link{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #707070;
+}
+
+.footer-bottom__logo{
+	margin: 34px 0 8px 0;
+}
+
+.footer-bottom__img{
+	background-size: 200% 100%;
+	background-position: top right;
+	width: 126px;
+	height: 46px;
+}
+
+.footer-bottom__address,.footer-bottom__copyright{
+	color: #737373;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.footer-bottom__copyright i{
+	font-size: 0.9rem;
+	transform: translateY(-1px);
+}
+
+.products-briefing__right-footer{
+	width: 100%;
+	margin-top: 30px;
+	border-top: 1px solid #f2f2f2;
+}
+
+.right-footer__link{
+	padding: 14px 22px;
+}
+
+.right-footer__link-img{
+	height: 20px;
+}
+
+.right-footer__link-label, .right-footer__link > span:nth-of-type(2){
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+
+.right-footer__link-label{
+	color: var(--text-color);
+}
+
+.right-footer__link > span:nth-of-type(2){
+	color: #757575;
+	margin-left: 14px;
+}

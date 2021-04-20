@@ -1,0 +1,262 @@
+
+/* Mobile & Tablet (code các đoạn giống nhau(cả 2 đều có) của cả Mobile và Tablet)*/
+/*Sẽ ko có media nào cho PC nhưng của PC là các đoạn code thuần ở bên file main*/
+/*khi responsive rất hay dùng position: fixed*/
+@media (max-width: 1023px){
+    :root{
+        --header-height: 68px;
+        --navbar-height: 0px;  /*0px và 68px sẽ đè nên 33px và 120px ở bên file base => 68-0=68*/
+        --width-mobile-search-history: 98%;
+    }
+    .hiden-on-mobile-tablet{  /*Cần ẩn đt nào thì add class này vào bên html*/
+        display: none;  /* ẩn trên cả tablet và moblie*/
+    }       /*Có thể tạo thêm 1 đt là .show-on-mobile-tablet (để hiện đt trên tablet or mobile VD: bar,mobile-search,...)*/
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .mobile-category{
+        display: block;
+    }
+    .container{
+        margin-top: var(--header-height);
+    }
+    .content{
+        padding: 55px 0;
+    }
+    .header__cart-list{
+        position: fixed;
+        top: var(--header-height);
+        padding: 0 calc((100% - 644px) / 2);/*lấy tổng web - tổng Grid = khoảng trống trắng 2 bên( / 2 nữa)*/
+        right: 0;
+        width: 100%;
+        animation: fadeIn 0.1s linear;
+        -webkit-animation: fadeIn 0.1s linear;
+        -moz-animation: fadeIn 0.1s linear;
+        -o-animation: fadeIn 0.1s linear;
+    }
+    .header__cart-list::before{
+        display: none;
+    }
+    i.cart__info-bottom--trash-can{
+        display: block;
+    }
+    .header__sort-bar{
+        display: flex;/*trả flex cho sort-bar mọi thuộc tính của display đều tắt bỏ t/c none(ẩn)*/
+    }
+    .user-interactive{
+        bottom: 8%;
+    }
+    .footer--tablet-mobile-margin{
+        margin-top: 20px;
+    }
+    .footer-bottom__item:last-child::before{
+        display: none;
+    }
+    .footer-bottom__item:nth-child(4){
+        margin-top: 8px;
+        display: block;
+    }
+    .chat{
+        bottom: -1px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hiden-on-tablet{
+        display: none;  /*chỉ ẩn đt trên tablet*/
+    }
+    .header__cart{
+        width: 9rem;
+        padding: 0;
+    }
+    .header__cart-icon--wrap{
+        top: 2px;
+        right: -14px;
+    }
+    .header__cart-notice{
+        top: -11px;
+        right: -12px;
+    }
+    .header__search-history{
+        width: 133%;
+    }
+    .footer--tablet-margin{
+        margin-top: 20px;
+    }
+    .footer-bottom__list{
+        text-align: center;
+    }
+    .footer__heading,.footer__list{
+        text-align: center;
+    }
+    .footer__download{
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    :root{
+        --header-height: 54px;
+        --navbar-height: 0px;  /*0px và 68px sẽ đè nên 33px và 120px ở bên file base => 68-0=68*/
+    }
+    .hiden-on-mobile{
+        display: none;  /*chỉ ẩn đt trên mobile*/
+    }
+    .content{
+        margin: 0 2px; 
+    }
+    .header-with-search{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__cart{
+        width: 7rem;
+    }
+    .header__cart-notice {
+        top: -10px;
+        right: -21px;
+    }
+    .header__logo{
+        flex: 1;
+        width: 15rem;
+        padding: 6px 37px 0 28px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .header__bars{
+        display: block;
+    }
+    .header__search-wrapper{
+        background-color: var(--white-color);
+        display: none;
+        max-height: 44px;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        z-index: 1;
+        padding: 4px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transform-origin: top;
+        animation: enlarge linear 0.2s;
+        -webkit-animation: enlarge linear 0.2s;
+        -moz-animation: enlarge linear 0.2s;
+    }
+    @keyframes enlarge {
+        from{
+            transform: scaleY(0);
+        }
+        to{
+            transform: scaleY(1);
+        }
+    }
+    .header__search{
+        border: 1px solid #efebeb;
+        border-radius: 0px;
+        height: 36px;
+    }
+    .header__search-history{
+        border-radius: 0 0 2px 2px;
+        width: var(--width-mobile-search-history);
+        position: fixed;
+        top: calc(var(--header-height) + var(--header-sort-bar-height));
+        left: calc((100% - var(--width-mobile-search-history)) / 2);
+    }
+    .header__search-button{
+        width: 5rem;
+    }
+    .header__mobile-search{
+        display: flex;
+    }
+    .header__mobile-search-input:checked ~ .header__search-wrapper
+    {
+        display: block;
+    }
+    .header__logo-img{
+        width: 120px;
+    }
+    .Pagination-item{
+        margin: 0;
+    }
+    .Pagination-item__link{
+        font-size: 1.6rem;
+        --height: 28px;
+    }
+    .home-product-item__price{
+        margin: 8px 0 8px 10px;
+    }
+    .home-product-item__price-old{
+        margin-right: 5px;
+    }
+    .interactive-call, .interactive-messenger, .interactive-zalo{
+        width: 36px;
+        height: 36px;
+    }
+    .interactive-call{
+        line-height: 4rem;
+    }
+    .interactive-call__icon{
+        font-size: 1.8rem;
+    }
+    .interactive-messenger{
+        line-height: 4.2rem;
+    }
+    .interactive-messenger__icon{
+        font-size: 2.05rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer--mobile-margin{
+        margin-top: 20px;
+    }
+    .footer__item--social{
+        justify-content: center;
+    }
+    .footer-bottom__item:nth-child(3)::before{
+        display: none;
+    }
+    .footer-bottom__item:nth-child(3){
+        margin-top: 8px;
+        display: block;
+    }
+}
+
+/* Cho kt/ màn của iphone 5/SE*/
+@media (max-width: 384px){
+    .cart__infor-top{
+        flex-wrap: wrap;
+    }
+    .cart__info-bottom{
+        margin-top: 0;
+    }
+    .header__mobile-search-icon,.header__bars-label,.header__cart-icon{
+        font-size: 2rem;
+    }
+    .header__cart-notice{
+        right: -17px;
+        padding: 1px 5px 0px 5px;
+    }
+    .header__logo{
+        padding: 0;
+    }
+    .home-product-item__price{
+        margin: 8px 10px 10px;
+        flex-direction: column;
+    }
+    .Pagination-item{
+        margin:0;
+    }
+    .Pagination-item__link{
+        --height: 27px;
+        min-width: 35px;
+    }
+}
