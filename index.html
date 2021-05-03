@@ -1187,98 +1187,98 @@
 		<footer class="footer">
 		</footer>
 	</div>
-		<!-- tao Base Modal (Ô đăng nhập,đăng ký)-->
-		<div class="modal">
-			<div class="modal__overlay"><!--Phần bóng đen mờ vây full trang web css bên file base.css-->
-			</div>
-			<div class="modal__body"><!--Phần box trắng ở center css bên file base.css-->
-				<!--Register form ĐK-->
-					<div class="auth-form register-form">
+	<!-- tao Base Modal (Ô đăng nhập,đăng ký)-->
+	<div class="modal">
+		<div class="modal__overlay"><!--Phần bóng đen mờ vây full trang web css bên file base.css-->
+		</div>
+		<div class="modal__body"><!--Phần box trắng ở center css bên file base.css-->
+			<!--Register form ĐK-->
+				<div class="auth-form register-form">
+					<div class="auth-form__container">
+						<div class="auth-form__header">
+							<h3 class="auth-form__header-Dk-left">Đăng Ký</h3>
+							<span class="auth-form__header-Dn-right move-form">Đăng nhập</span>
+						</div>
+						<form action="" method="POST" id="register-form" class="auth-form__form">
+							<div class="auth-form__form-child">	<!--data-rule attribute là để xđ cái trường đó có phải ktra ko? (ko tính isRequired vì nó áp dụng cho all trường)-->
+								<input type="text" data-rule="true" name="email" class="auth-form__form-input" placeholder="Email của bạn" >
+								<span class="auth-form__form-message"></span>
+							</div>
+							<div class="auth-form__form-child">
+								<input type="password" data-rule="true" name="password" autocomplete="on" class="auth-form__form-input" placeholder="Mật khẩu của bạn" >
+								<span class="auth-form__form-message"></span>
+							</div>
+							<div class="auth-form__form-child">
+								<input type="password" data-rule="true" name="confirmation" autocomplete="on" class="auth-form__form-input" placeholder="Nhập lại mật khẩu" >
+								<span class="auth-form__form-message"></span>
+							</div>
+						</form>
+						<p class="auth-form__note">Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+							<a href="#" title="Điều khoản dịch vụ" class="auth-form__note-link">Điều khoản dịch vụ</a> & 
+							<a href="#" title="Chính sách bảo mật" class="auth-form__note-link">Chính sách bảo mật</a>
+						</p>
+						<div class="auth-form__controls">
+							<button class="btn btn--back">TRỞ LẠI</button>
+							<button type="submit" form="register-form" class="btn btn--primary btn-submit">ĐĂNG KÝ</button>
+						</div>
+					</div>
+					<div class="auth-form__socials">
+						<button class="btn btn-with--icon auth-form__socials--facebook">
+							<i class="auth-form__socials--icon fab fa-facebook-square"></i>
+							<span class="btn-icon--text">Kết nối với Facebook</span>
+						</button>
+						<button class="btn btn-with--icon auth-form__socials--google">
+							<i class="auth-form__socials--icon fab fa-google" style="color:#D44446"></i>
+							<span class="btn-icon--text">Kết nối với Google</span>
+						</button>
+					</div>
+				</div>
+				
+				<!--Login form ĐN-->
+				<div class="auth-form login-form">
 						<div class="auth-form__container">
 							<div class="auth-form__header">
-								<h3 class="auth-form__header-Dk-left">Đăng Ký</h3>
-								<span class="auth-form__header-Dn-right move-form">Đăng nhập</span>
+								<h3 class="auth-form__header-Dn-left">Đăng Nhập</h3>
+								<span class="auth-form__header-Dk-right move-form">Đăng ký</span>
 							</div>
-							<form action="" method="POST" id="register-form" class="auth-form__form">
-								<div class="auth-form__form-child">	<!--data-rule attribute là để xđ cái trường đó có phải ktra ko? (ko tính isRequired vì nó áp dụng cho all trường)-->
-									<input type="text" data-rule="true" name="email" class="auth-form__form-input" placeholder="Email của bạn" >
+							<form action="" method="POST" id="login-form" class="auth-form__form">
+								<div class="auth-form__form-child">
+									<input type="text" name="email" data-rule="true" class="auth-form__form-input" placeholder="Email của bạn / Tên đăng nhập">
 									<span class="auth-form__form-message"></span>
 								</div>
 								<div class="auth-form__form-child">
-									<input type="password" data-rule="true" name="password" autocomplete="on" class="auth-form__form-input" placeholder="Mật khẩu của bạn" >
-									<span class="auth-form__form-message"></span>
-								</div>
-								<div class="auth-form__form-child">
-									<input type="password" data-rule="true" name="confirmation" autocomplete="on" class="auth-form__form-input" placeholder="Nhập lại mật khẩu" >
+									<input type="password" name="password" data-rule="true" autocomplete="on" class="auth-form__form-input" placeholder="Mật khẩu của bạn" >
 									<span class="auth-form__form-message"></span>
 								</div>
 							</form>
-							<p class="auth-form__note">Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-								<a href="#" title="Điều khoản dịch vụ" class="auth-form__note-link">Điều khoản dịch vụ</a> & 
-								<a href="#" title="Chính sách bảo mật" class="auth-form__note-link">Chính sách bảo mật</a>
-							</p>
+							<div class="auth-form__help">
+								<a class="auth-form__help-forget" target="_blank" href="https://shopee.vn/buyer/login/reset">Quên Mật Khẩu</a>
+								<div class="auth-form__form-separate"></div>
+								<a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
+							</div>
 							<div class="auth-form__controls">
 								<button class="btn btn--back">TRỞ LẠI</button>
-								<button type="submit" form="register-form" class="btn btn--primary btn-submit">ĐĂNG KÝ</button>
+								<button type="submits" form="login-form" class="btn btn--primary btn-submit">ĐĂNG NHẬP</button>
 							</div>
 						</div>
 						<div class="auth-form__socials">
-							<button class="btn btn-with--icon auth-form__socials--facebook">
+							<button class="btn btn-between auth-form__socials--sms">
+								<i class="auth-form__socials--icon fas fa-comment-dots"></i>
+								<span class="btn-icon--text">SMS</span>
+							</button>
+							<button class="btn btn-between auth-form__socials--facebook">
 								<i class="auth-form__socials--icon fab fa-facebook-square"></i>
-								<span class="btn-icon--text">Kết nối với Facebook</span>
+								<span class="btn-icon--text">Facebook</span>
 							</button>
-							<button class="btn btn-with--icon auth-form__socials--google">
+							<button class="btn btn-between auth-form__socials--google">
 								<i class="auth-form__socials--icon fab fa-google" style="color:#D44446"></i>
-								<span class="btn-icon--text">Kết nối với Google</span>
+								<span class="btn-icon--text">Google</span>
 							</button>
 						</div>
 					</div>
-					
-					<!--Login form ĐN-->
-					<div class="auth-form login-form">
-							<div class="auth-form__container">
-								<div class="auth-form__header">
-									<h3 class="auth-form__header-Dn-left">Đăng Nhập</h3>
-									<span class="auth-form__header-Dk-right move-form">Đăng ký</span>
-								</div>
-								<form action="" method="POST" id="login-form" class="auth-form__form">
-									<div class="auth-form__form-child">
-										<input type="text" name="email" data-rule="true" class="auth-form__form-input" placeholder="Email của bạn / Tên đăng nhập">
-										<span class="auth-form__form-message"></span>
-									</div>
-									<div class="auth-form__form-child">
-										<input type="password" name="password" data-rule="true" autocomplete="on" class="auth-form__form-input" placeholder="Mật khẩu của bạn" >
-										<span class="auth-form__form-message"></span>
-									</div>
-								</form>
-								<div class="auth-form__help">
-									<a class="auth-form__help-forget" target="_blank" href="https://shopee.vn/buyer/login/reset">Quên Mật Khẩu</a>
-									<div class="auth-form__form-separate"></div>
-									<a href="#" class="auth-form__help-link">Cần trợ giúp?</a>
-								</div>
-								<div class="auth-form__controls">
-									<button class="btn btn--back">TRỞ LẠI</button>
-									<button type="submits" form="login-form" class="btn btn--primary btn-submit">ĐĂNG NHẬP</button>
-								</div>
-							</div>
-							<div class="auth-form__socials">
-								<button class="btn btn-between auth-form__socials--sms">
-									<i class="auth-form__socials--icon fas fa-comment-dots"></i>
-									<span class="btn-icon--text">SMS</span>
-								</button>
-								<button class="btn btn-between auth-form__socials--facebook">
-									<i class="auth-form__socials--icon fab fa-facebook-square"></i>
-									<span class="btn-icon--text">Facebook</span>
-								</button>
-								<button class="btn btn-between auth-form__socials--google">
-									<i class="auth-form__socials--icon fab fa-google" style="color:#D44446"></i>
-									<span class="btn-icon--text">Google</span>
-								</button>
-							</div>
-						</div>
-					</div>
-			</div>
+				</div>
 		</div>
+	</div>
 	<div class="chat">
 		<div class="chat-off">
 			<i class="chat-off__icon far fa-comments"></i>
@@ -1340,6 +1340,13 @@
             </svg>
         </a>
 	</div>
+	<div class="loading-page">
+		<div class="loadding-page__spinner"></div>
+		<!-- <div class="loading-page__circle first-circle"></div>
+		<div class="loading-page__circle second-circle"></div>
+		<div class="loading-page__circle third-circle"></div> -->
+	</div>
+    <!-- ======================== Script =========================-->
 	<script src="./ingredient-general/javascript/header.js"></script>
 	<script src="./ingredient-general/javascript/footer.js"></script>
 	<script src="./ingredient-general/javascript/javascrip-general.js"></script>

@@ -60,8 +60,14 @@ function account() {
     var backButton = document.querySelectorAll('.btn.btn--back');
     var overlay = document.querySelector('.modal__overlay');
     var chatBtn = document.querySelector('.chat__conversation--btn');
+     // Hai nút chỉ hiện khi vào mobile và nó ở phần thanh bars
+    var headerBarsLogin = document.querySelector('.header__bars-item--not-login');
+    var headerBarsRegister = document.querySelector('.header__bars-item--not-register');
+    
     overlay.addEventListener('click', showModal);
     chatBtn.addEventListener('click', showModal);
+    headerBarsLogin.addEventListener('click', showModal);
+    headerBarsRegister.addEventListener('click', showModal);
 
     // Thêm sự kiện click cho 2 nút back
     for(var button of backButton) {
@@ -86,7 +92,7 @@ function account() {
             }
         }
 
-        if(event.target.classList.contains('navbar-item-register') || event.target.matches('.auth-form__header-Dk-right')) {
+        if(event.target.classList.contains('navbar-item-register') || event.target.matches('.auth-form__header-Dk-right') || event.currentTarget.matches('.header__bars-item--not-register')) {
             registerFormWrap.style.display = "block";
             loginFormWrap.style.display = "none";
         }
@@ -119,7 +125,7 @@ function chat() {
     })
 
     chatClose.addEventListener('click', function(e) {
-        chatOff.style.display = 'block';
+        chatOff.style.display = 'flex';
         chat.removeAttribute('style');
         chatOn.style.display = 'none';
     })
@@ -139,7 +145,7 @@ function getParent(element, selector) {
  var resetValidate;
 
  // Validate Form
- function Validator(selector) {
+ function Validator(selector, isDropDataCart = true) {
  
      var isFormValid;
      var currentUserInfor = localStorage.getItem('currentUser');
@@ -271,9 +277,12 @@ function getParent(element, selector) {
                  if(getData) {
                      alert('Đăng nhập thành công.');
                      document.querySelector('.modal').classList.toggle('modal-show');
+                     location.reload();
                      loggedInUser(formValue);
                      setInfoCurrentUser(formValue);
-                     dropDataCart();
+                     if(isDropDataCart) {
+                        dropDataCart();
+                     }
                  } else {
                      alert('Tài khoản nhập chưa đúng. Hoặc không tồn tại!\nVui lòng kiểm tra lại.');
                  }
@@ -310,13 +319,22 @@ function getParent(element, selector) {
      var userName = document.querySelector('.header__navbar-user--name');
      var userAvatar = document.querySelector('.header__navbar-user--img');
      var loginChat = document.querySelector('.chat__conversation-login');
+     var headerBarsLogin = document.querySelector('.header__bars-item--not-login');
+     var headerBarsRegister = document.querySelector('.header__bars-item--not-register');
+     var logoutElementOnMobile = document.querySelector('.header__bars-item.header__bars-item--logout');
  
      // Ẩn phần login ở chỗ chat
      loginChat.style.display = 'none';
- 
+    
      registerElement.style.display = 'none';
      registerElement.nextElementSibling.style.display = 'none';
- 
+
+     // Ẩn phần login ở thanh bars on mobile
+     navbarOnMobile(headerBarsLogin, headerBarsRegister, 'none');
+
+     // Show phần login ở thanh bars on mobile
+     logoutElementOnMobile.style.display = 'block';
+
      //Thay đổi tên & avatar của user
      if(formValue.email !== 'nguyenductuyen745@gmail.com') {
         var lastIndex = formValue.email.search(/([0-9])|([@])/);
@@ -328,12 +346,26 @@ function getParent(element, selector) {
      }
      accountUserName.style.display = 'flex';
      
+     // Thay đổi nội dung của header bars 
+     var navbarUserLoged = document.querySelector('.header__navbar-item.header__navbar-user').innerHTML;
+     var barsUserLoged = document.querySelector('.header__bars-heading-user');
+     var barsHeaderLogo = document.querySelector('.header__bars-heading-logo');
+
+     barsUserLoged.style.display = 'flex';
+     barsHeaderLogo.style.display = 'none';
+     barsUserLoged.innerHTML = navbarUserLoged;
+
+
      // Khi user chọn nút Đăng Xuất
      var logoutElement = document.querySelector('.navbar-user-item--logout');
-     logoutElement.addEventListener('click', function(event) {
+     logoutElement.onclick = logoutElementOnMobile.onclick = function(event) {
+         barsHeaderLogo.style.display = 'block';
+         barsUserLoged.style.display = 'none';
+         navbarOnMobile(headerBarsLogin, headerBarsRegister, 'block');
+         logoutElementOnMobile.style.display = 'none';
          localStorage.removeItem('currentUser');
          location.reload();
-     })
+     }
  }
 
  var updateCart;
@@ -375,38 +407,44 @@ function Cart() {
         var listProducts = document.querySelectorAll('.cart__item');
         var isLike = false;
 
-        // Từ lần thứ 2 thì kiểm tra các item xem nếu item nào giống thì chỉ update lại số lượng
-        if(listProducts.length > 0) { 
-            for(var item of listProducts) {
-                if(item.querySelector('.cart__infor-top--name').innerText === currentProductInfor['name'] && item.querySelector('.cart__item--img').getAttribute('src') === currentProductInfor['image']) {
-                    currentQuantity = item.querySelector('.cart__infor-top--soluong');
-                    currentQuantity.innerText = Number(currentQuantity.innerText) + Number(quantityProduct);
-                    totalQuantity = Number(currentQuantity.innerText);
-                    isLike = true;
-                    break;
+        // Trước khi thêm sản phẩm vào cart thì vc đầu tiền cần phải check xem customer đã đăng nhập chưa(nếu chưa thì sẽ show giao diên login nên)
+        if(localStorage.getItem('currentUser')) {
+
+            // Từ lần thứ 2 thì kiểm tra các item xem nếu item nào giống thì chỉ update lại số lượng
+            if(listProducts.length > 0) { 
+                for(var item of listProducts) {
+                    if(item.querySelector('.cart__infor-top--name').innerText === currentProductInfor['name'] && item.querySelector('.cart__item--img').getAttribute('src') === currentProductInfor['image']) {
+                        currentQuantity = item.querySelector('.cart__infor-top--soluong');
+                        currentQuantity.innerText = Number(currentQuantity.innerText) + Number(quantityProduct);
+                        totalQuantity = Number(currentQuantity.innerText);
+                        isLike = true;
+                        break;
+                    }
                 }
-            }
-            if(!isLike) {
+                if(!isLike) {
+                    insertProduct(currentProductInfor, quantityProduct);
+                    totalQuantity = quantityProduct;
+                }
+
+            } else{ // Chèn thằng sản phẩm khi đó là sp đầu tiên
                 insertProduct(currentProductInfor, quantityProduct);
                 totalQuantity = quantityProduct;
             }
 
-        } else{ // Chèn thằng sản phẩm khi đó là sp đầu tiên
-            insertProduct(currentProductInfor, quantityProduct);
-            totalQuantity = quantityProduct;
+            // Hiển thị notify thêm hàng thành công
+            notifySuccessful.style.display = 'block';
+            setTimeout(function() {
+                notifySuccessful.style.display = 'none';
+            }, 2200)
+
+            // Thêm sự kiện cho nút xóa;
+            removeCartItem();
+            //
+            updateNotice();
+            setCartInfor(currentProductInfor, totalQuantity);
+        } else {
+            showModal();
         }
-
-        // Hiển thị notify thêm hàng thành công
-        notifySuccessful.style.display = 'block';
-        setTimeout(function() {
-            notifySuccessful.style.display = 'none';
-        }, 2200)
-
-        // Thêm sự kiện cho nút xóa;
-        removeCartItem();
-        //
-        updateNotice();
-        setCartInfor(currentProductInfor, totalQuantity);
     }
 
     // Hàm này để lưu info sản phẩm vừa thêm nên localStorage
@@ -515,3 +553,19 @@ function removeCartItem() {
         updateCart();
     }
 }
+
+// Configuration navbar on mobile
+function navbarOnMobile(loginElement, logoutElement, status) {
+    const headerBarsList = document.querySelector('.header__bars-list');
+    loginElement.style.display = logoutElement.style.display = status;
+}
+
+// Off Loading Page Interface when loaded page
+(function OffLoadingPage() {
+    const loadingPageElement = document.querySelector('.loading-page');
+
+    window.addEventListener('load', (event) => {
+        loadingPageElement.style.display = 'none';
+    })
+
+})();

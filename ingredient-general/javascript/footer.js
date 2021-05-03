@@ -96,7 +96,7 @@ function renderHtmlFooter(linkImageFolder) {
             <div class="footer-bottom__img" style="background-image: url('${linkImageFolder}/image/Dang\ ky\,\ thong\ bao\ website\ thuong\ mai\ dien\ tu.png')"></div>
         </a>
     </div>
-    <div class="footer-bottom__address">Địa chỉ: Thôn 3, Xã Canh Nậu, Huyện Thạch Thất, Hà Nội</div>
+    <div class="footer-bottom__address">Địa chỉ: Thôn 2A, Xã Canh Nậu, Huyện Thạch Thất, Hà Nội</div>
     <div class="footer-bottom__copyright">
         <i class="far fa-copyright"></i> 2020 - Bản quyền thuộc về Công Ty TTT
     </div>

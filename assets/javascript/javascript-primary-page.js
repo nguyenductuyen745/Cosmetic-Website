@@ -318,39 +318,39 @@ var productsInfor = [
         discountPercent: '19%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/56.png',
+        name: 'Tẩy Trang Whoo Vital Hydrating Cleasing Water ',
+        oldPrice: '950.000đ',
+        curentPrice: '855.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/57.png',
+        name: 'Whoo Super Hydrating Eye Essence Serum  đặc trị thâm mắt, chống nhăn và tan bọng mắt',
+        oldPrice: '2.400.000đ',
+        curentPrice: '2.160.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
+        image: './ingredient-general/image/products_image/58.png',
+        name: 'Tinh chất cô đặc chuyên phục hồi da khô và da nhờn thiếu nước Ampoule 777',
         oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        curentPrice: '2.520.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/59.png',
+        name: 'Phấn nước Whoo Luxury Golden Cushion Glow phiên bản giới hạn',
+        oldPrice: '1.500.000đ',
+        curentPrice: '1.350.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/60.png',
+        name: 'Bộ Cấp Nước Su:m37 Water Full 3p',
+        oldPrice: '500.000đ',
+        curentPrice: '530.000đ',
+        discountPercent: '30%' 
     },
     // Trang 3
     {
@@ -497,39 +497,39 @@ var productsInfor = [
         discountPercent: '19%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/61.png',
+        name: 'Set tái sinh Whoo Cheongidan Radiant 6 món',
+        oldPrice: '1.625.000đ',
+        curentPrice: '800.000đ',
+        discountPercent: '50.8%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/62.png',
+        name: 'Set Ohui The First Tái sinh da cao cấp ',
+        oldPrice: '11.800.000đ',
+        curentPrice: '5.310.000đ',
+        discountPercent: '51.7%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/63.png',
+        name: 'Set 5 gói dùng thử mặt nạ thải độc Su:m 37',
+        oldPrice: '200.000đ',
+        curentPrice: '100.000đ',
+        discountPercent: '50%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/64.png',
+        name: 'Xịt khoáng nước thần Su:m37 Secret Essence Mist',
+        oldPrice: '1.000.000đ',
+        curentPrice: '900.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/65.png',
+        name: 'Bộ đôi tinh chất nuôi dưỡng và  tái tạo da ngày và đêm LosecSumma  Ampoule Duo',
+        oldPrice: '7.500.000đ',
+        curentPrice: '6.750.000đ',
+        discountPercent: '10%' 
     },
     // Trang số 4
     {
@@ -669,39 +669,39 @@ var productsInfor = [
         curentPrice: '2.000.000đ',
         discountPercent: '19%' 
     },{
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/66.png',
+        name: 'Kem Dưỡng cô đặc tái sinh da The First Geniture Cream Intensive',
+        oldPrice: '5.900.000đ',
+        curentPrice: '5.310.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/67.png',
+        name: 'Kem nền Whoo Mi Luxury Cream Foundation SPF25/PA++',
+        oldPrice: '1.300.000đ',
+        curentPrice: '1.170.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/68.png',
+        name: 'Kem Massage Tạo Độ Ẩm Ohui Tender Massage Cream',
+        oldPrice: '750.000đ',
+        curentPrice: '675.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/69.png',
+        name: 'Kem lót trang điểm Whoo Mi Essential Primer Base',
+        oldPrice: '1.300.000đ',
+        curentPrice: '1.170.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/70.png',
+        name: 'Kem lót trang điểm Whoo Mi Essential Makeup Base',
+        oldPrice: '1.800.000đ',
+        curentPrice: '1.620.000đ',
+        discountPercent: '10%' 
     },
     // Trang số 5
     {
@@ -841,39 +841,39 @@ var productsInfor = [
         curentPrice: '2.000.000đ',
         discountPercent: '19%' 
     },{
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
+        image: './ingredient-general/image/products_image/71.png',
+        name: 'Set Tinh Dầu Whoo Hwanyu Imperial Youth Essence 50ml',
+        oldPrice: '11.500.000đ',
+        curentPrice: '10.350.000đ',
         discountPercent: '19%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/72.png',
+        name: 'Set tinh Chất Vàng Hoàn Lưu Cao Whoo Hwanyu Signature Ampoule',
+        oldPrice: '22.500.000đ',
+        curentPrice: '20.250.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/73.png',
+        name: 'Set Kem Dưỡng Hoàn Lưu Cao Whoo Hwanyu Go Cream Special Set 10sp',
+        oldPrice: '15.000.000đ',
+        curentPrice: '13.500.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/74.png',
+        name: 'Set Kem Mắt Whoo Hoàn Lưu Cao Hwanyu Dongan Go',
+        oldPrice: '9.700.000đ',
+        curentPrice: '8.730.000đ',
+        discountPercent: '10%' 
     },
     {
-        image: './ingredient-general/image/products_image/1.png',
-        name: 'Set dưỡng da hoàng cung cấp ẩm chuyên sâu Ohui Miracle Moisture',
-        oldPrice: '2.800.000đ',
-        curentPrice: '2.000.000đ',
-        discountPercent: '19%' 
+        image: './ingredient-general/image/products_image/75.png',
+        name: 'Set Phấn nước  OHUI X Jane Packer',
+        oldPrice: '1.650.000đ',
+        curentPrice: '1.485.000đ',
+        discountPercent: '10%' 
     },
     // Trang số 6
     {
@@ -1152,6 +1152,17 @@ function FliterPage() {
         }
     }
 }
+
+// btn chuyển sang trạng thái active khi user click vào nút
+(function btnActiveFilter() {
+    var btnFilters = document.querySelector('.home-filter__sort');
+    btnFilters.addEventListener('click', (event) => {
+        if(event.target.matches('.btn')) {
+            btnFilters.querySelector('.btn.btn--primary').classList.remove('btn--primary');
+            event.target.classList.add('btn--primary');
+        }
+    })
+})();
 
 // Phần sort option
 function SortOption() {

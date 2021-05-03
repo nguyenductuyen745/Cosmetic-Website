@@ -90,9 +90,6 @@
     .page-products__content-left{
         max-width: 100%;
     }
-    .user-interactive{
-        bottom: 8%;
-    }
     .footer--tablet-mobile-margin{
         margin-top: 20px;
     }
@@ -102,9 +99,6 @@
     .footer-bottom__item:nth-child(4){
         margin-top: 8px;
         display: block;
-    }
-    .chat{
-        bottom: -1px;
     }
 }
 
@@ -194,6 +188,10 @@
     }
     .user-interactive{
         right: 20px;
+        bottom: 12%;
+    }
+    .chat{
+        bottom: 48px;
     }
     .footer--tablet-margin{
         margin-top: 20px;
@@ -499,6 +497,12 @@
     }
     .promotion-combo__products{
         margin-top: 10px;
+    }
+    .chat {
+        bottom: 42px;
+    }
+    .user-interactive {
+        bottom: 15%;
     }
     .footer--mobile-margin{
         margin-top: 20px;

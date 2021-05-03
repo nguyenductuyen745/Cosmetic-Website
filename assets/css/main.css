@@ -281,6 +281,7 @@
 	margin: 8px 7px 8px 10px;
 	align-items: baseline;	/*lấy phần chân dòng*/
 	flex-wrap: wrap;
+	line-height: 1.4rem;
 }
 
 .home-product-item__price-old{

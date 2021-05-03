@@ -212,6 +212,15 @@
     .interactive-messenger__icon{
         font-size: 2.05rem;
     }
+    .auth-form {
+        width: 36rem;
+    }
+    .auth-form__socials--sms {
+        display: none;
+    }
+    .auth-form__controls {
+        margin: 4.3rem 0 2.2rem 0;;
+    }
     .footer{
         text-align: center;
     }

@@ -141,6 +141,18 @@ function sliderImage() {
     
 }
 
+function showModal() {
+    document.querySelector('.modal').classList.toggle('modal-show');
+    document.querySelector('.auth-form.register-form').style.display = "none";
+    document.querySelector('.auth-form.login-form').style.display = "block";
+    setTimeout(() => {
+        alert(`Bạn cần phải đăng nhập trước khi có thể sử dụng được chức năng này.
+
+Nếu bạn chưa có tài khoản thì có thể đăng ký tại form đăng ký của chúng tôi, bằng cách click vào ô "đăng ký" ở góc trên bên phải của form đăng nhập.
+Xin cảm ơn! `);
+    }, 300);
+}
+
 // Phan Favourite product
 function FavouriteProduct() {
     var favouriteButton = document.querySelector('.left-footer__favourite');
@@ -155,9 +167,22 @@ function FavouriteProduct() {
         if(localStorage.getItem('currentUser')) {
             favouriteButton.classList.toggle('left-footer__favourite-action');
         } else {
-            document.querySelector('.modal').classList.toggle('modal-show');
-            document.querySelector('.auth-form.register-form').style.display = "none";
-            document.querySelector('.auth-form.login-form').style.display = "block";
+            showModal();
         }
     }
 }
+
+// Điều hướng sang trang cart page khi click nút mua hàng
+(function direction() {
+    var purchaseBtn = document.querySelectorAll('.right-action__buy-now');
+
+    for(var btn of purchaseBtn) {
+        btn.addEventListener('click', (event) => {
+            if(localStorage.getItem('currentUser')) {
+                window.location.href = '../cart-page/cartIndex.html';
+            } else {
+               showModal();
+            }
+        })
+    }
+})();
