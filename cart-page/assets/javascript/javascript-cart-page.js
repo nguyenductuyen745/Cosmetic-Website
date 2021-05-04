@@ -376,14 +376,26 @@ Xin cảm ơn!`);
         })();
     }
 
-    (function moveChatElement() {
+
+    // Js for Chat location
+    // Set vị trí cho ô chat ngay từ khi loaded web
+    window.matchMedia('(max-width: 739px)').matches && moveChatElement();
+
+    // Thay đổi linh động vị trí khi user resize or chuyển chế độ size màn hình
+    window.addEventListener('resize', () => {
+        window.matchMedia('(max-width: 739px)').matches ? moveChatElement() : moveChatElement(false);
+    })
+
+    function moveChatElement(anotherMobile = true) {
         const chatElement = $('.chat');
         const cartProductFooter = $('.cart-product-footer').offsetHeight;
 
         if(getLocalStr('currentUser')) {
             chatElement.style.bottom = `${cartProductFooter - 1}px`;
-        } else {
+        }
+        
+        if(!getLocalStr('currentUser') || anotherMobile === false){
             chatElement.style.bottom = '-1px';
         }
 
-    })();
+    };
