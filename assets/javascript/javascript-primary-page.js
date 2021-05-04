@@ -319,14 +319,14 @@ var productsInfor = [
     },
     {
         image: './ingredient-general/image/products_image/56.png',
-        name: 'Tẩy Trang Whoo Vital Hydrating Cleasing Water ',
+        name: 'Tẩy Trang Whoo Vital Hydrating Cleasing Water',
         oldPrice: '950.000đ',
         curentPrice: '855.000đ',
         discountPercent: '10%' 
     },
     {
         image: './ingredient-general/image/products_image/57.png',
-        name: 'Whoo Super Hydrating Eye Essence Serum  đặc trị thâm mắt, chống nhăn và tan bọng mắt',
+        name: 'Whoo Super Hydrating Eye Essence Serum đặc trị thâm mắt, chống nhăn và tan bọng mắt',
         oldPrice: '2.400.000đ',
         curentPrice: '2.160.000đ',
         discountPercent: '10%' 
@@ -505,7 +505,7 @@ var productsInfor = [
     },
     {
         image: './ingredient-general/image/products_image/62.png',
-        name: 'Set Ohui The First Tái sinh da cao cấp ',
+        name: 'Set Ohui The First Tái sinh da cao cấp',
         oldPrice: '11.800.000đ',
         curentPrice: '5.310.000đ',
         discountPercent: '51.7%' 
@@ -526,7 +526,7 @@ var productsInfor = [
     },
     {
         image: './ingredient-general/image/products_image/65.png',
-        name: 'Bộ đôi tinh chất nuôi dưỡng và  tái tạo da ngày và đêm LosecSumma  Ampoule Duo',
+        name: 'Bộ đôi tinh chất nuôi dưỡng và tái tạo da ngày và đêm LosecSumma Ampoule Duo',
         oldPrice: '7.500.000đ',
         curentPrice: '6.750.000đ',
         discountPercent: '10%' 
@@ -870,7 +870,7 @@ var productsInfor = [
     },
     {
         image: './ingredient-general/image/products_image/75.png',
-        name: 'Set Phấn nước  OHUI X Jane Packer',
+        name: 'Set Phấn nước OHUI X Jane Packer',
         oldPrice: '1.650.000đ',
         curentPrice: '1.485.000đ',
         discountPercent: '10%' 

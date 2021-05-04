@@ -375,3 +375,15 @@ Xin cảm ơn!`);
 
         })();
     }
+
+    (function moveChatElement() {
+        const chatElement = $('.chat');
+        const cartProductFooter = $('.cart-product-footer').offsetHeight;
+
+        if(getLocalStr('currentUser')) {
+            chatElement.style.bottom = `${cartProductFooter - 1}px`;
+        } else {
+            chatElement.style.bottom = '-1px';
+        }
+
+    })();

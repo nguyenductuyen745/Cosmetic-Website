@@ -119,14 +119,14 @@ function chat() {
     var chatClose = document.querySelector('.chat__heading-collapse');
 
     chatOff.addEventListener('click', function(event) {
-        chat.style.animation = 'growth-origin 0.3s ease-out';
+        // chat.style.animation = 'growth-origin 0.3s ease-out';
         chatOn.style.display = 'block';
         chatOff.style.display = 'none';
     })
 
     chatClose.addEventListener('click', function(e) {
         chatOff.style.display = 'flex';
-        chat.removeAttribute('style');
+        // chat.removeAttribute('style');
         chatOn.style.display = 'none';
     })
 }
