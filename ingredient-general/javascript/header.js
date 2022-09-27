@@ -38,7 +38,7 @@ function renderHtmlHeader(linkImageFolder) {
                         <ul class="header-notifi--list">
                             <li class="header-notifi--item">
                                 <a href="#" class="header-notifi--link">
-                                    <img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1580794352-myphamohui-lgvina.png">
+                                    <img class="header-notifi--img" src="https://myphamohui.com/wp-content/uploads/2013/08/set-mini-ohui-the-first-5pcs-2-scaled-e1615795028195-500x500.jpg">
                                     <div class="header-notifi--information">
                                         <div class="header__notifi-name">Xác thực chính hãng nguồn gốc các sản phầm của Ohui
                                         </div>
@@ -49,7 +49,7 @@ function renderHtmlHeader(linkImageFolder) {
                             </li>
                             <li class="header-notifi--item">
                                 <a href="#" class="header-notifi--link">
-                                    <img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1576046204-myphamohui-lgvina.png">
+                                    <img class="header-notifi--img" src="https://myphamohui.com/wp-content/uploads/2019/11/set-pha%CC%82%CC%81n-nu%CC%9Bo%CC%9B%CC%81c-ohui-scaled-e1623482071479-500x500-1.jpeg">
                                     <div class="header-notifi--information">
                                         <div class="header__notifi-name">Sale sốc bộ dưỡng Ohui the first tái tạo trẻ hóa da SALE OFF 70%</div>
                                         <div class="header__notifi-note">Siêu Sale duy nhất 3 ngày 18-20/11/2020</div>
@@ -58,7 +58,7 @@ function renderHtmlHeader(linkImageFolder) {
                             </li>
                             <li class="header-notifi--item">
                                 <a href="#" class="header-notifi--link">
-                                    <img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1574758841-myphamohui-lgvina.png">
+                                    <img class="header-notifi--img" src="https://myphamohui.com/wp-content/uploads/2019/04/chong-nang-ohui-multi-sun-spf50-40ml.jpg">
                                     <div class="header-notifi--information">
                                         <div class="header__notifi-name">Da nhạy cảm thì có dùng được SECRET không?</div>
                                         <div class="header__notifi-note">"Da mình nhạy cảm thì có dùng được Secret không?"</div>
@@ -67,7 +67,7 @@ function renderHtmlHeader(linkImageFolder) {
                             </li>
                             <li class="header-notifi--item">
                                 <a href="#" class="header-notifi--link">
-                                    <img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1574754950-myphamohui-lgvina.png">
+                                    <img class="header-notifi--img" src="https://myphamohui.com/wp-content/uploads/2020/09/set-ddvs-phu-nu-ohui-500x500.jpg">
                                     <div class="header-notifi--information">
                                         <div class="header__notifi-name">Bộ sưu tậm phiên bản giới hạn mùa Lễ Hội 2019</div>
                                         <div class="header__notifi-note">Bộ sưu tậm phiên bản giới hạn mùa Lễ Hội 2019</div>
@@ -76,7 +76,7 @@ function renderHtmlHeader(linkImageFolder) {
                             </li>
                             <li class="header-notifi--item">
                                 <a href="#" class="header-notifi--link">
-                                    <img class="header-notifi--img" src="https://img.tickid.vn/photos/resized/200x120/83-1574738403-myphamohui-lgvina.png">
+                                    <img class="header-notifi--img" src="https://myphamohui.com/wp-content/uploads/2020/09/kem-vdl-50-trang-da-500x500.jpg">
                                     <div class="header-notifi--information">
                                         <div class="header__notifi-name">Ohui chính thức ra mắt dòng son lì mới The First Geniture Lipstick</div>
                                         <div class="header__notifi-note">The First Geniture Lipstick - Tuyệt phầm cho đôi môi</div>
